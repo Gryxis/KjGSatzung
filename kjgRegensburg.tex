@@ -1,7 +1,675 @@
-\documentclass{kjgsatzung}
+\documentclass[12pt]{report}
 
+
+%------------------------------------
+%   Required Packages
+%------------------------------------
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[pages=some]{background}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel} % deutsche Bezeichnungen und Worttrennung… 
+\usepackage[T1]{fontenc} % Wird u.a. f\"ur das Trennen von W\"ortern  mit Umlauten genutzt.
+\usepackage[a4paper, left=2cm,top=2cm]{geometry}
+%------------------------------------
+%    Farben
+%------------------------------------
+
+\definecolor{weiß}{RGB}{255,255,255}
+\definecolor{kjggrau}{RGB}{119,120,123}
+\definecolor{kjghellgrau}{RGB}{192,192,192}
+\definecolor{kjgblau}{RGB}{54,95,145}
+\definecolor{kjgtuerkis}{RGB}{0, 181,190}
+
+\backgroundsetup{
+ scale=1,
+ angle=0,
+ color=white,
+ placement=top,
+ opacity = 1,
+ contents= {
+  \includegraphics[width=\paperwidth, height=26.80cm]{satzung_einband.png}
+ }
+}
+
+%--------------------------------------
+% Fußnoten mehfrach referenzieren:
+% Quelle:
+% https://www.macuser.de/threads/latex-fussnote-mehrfach-referenzieren.519258/
+\newcommand{\footnoteremember}[2]{
+  \footnote{#2}
+  \newcounter{#1}
+  \setcounter{#1}{\value{footnote}}
+}
+\newcommand{\footnoterecall}[1]{%
+  \footnotemark[\value{#1}]
+}
+%--------------------------------------
+
+
+
+\title{Satzung KjG Regensburg}
+\author{}
 
 \begin{document}
+  \maketitle
+  \begin{center}
+  %Einband
+    \pagestyle{empty}
+    \BgThispage
+    \vspace*{\fill}
+    \begin{Huge}
+      { \color{kjgtuerkis}  Stand Juni 2017}
+    \end{Huge}
+    \vspace*{\fill}
+    \newpage
+  %Zitat Thoms Morus
+    \pagestyle{empty}
+    \vspace*{\fill}
+    \begin{Huge}
+     "Tradition ist nicht das Halten der Asche, sondern das Weitergeben der Flamme"
+    \end{Huge}
+    \newline
+    \begin{large}
+      - Thomas Morus -
+    \end{large}
+    \vspace*{\fill}
+  \end{center}
 
-hello world!
+  %Inhaltsverzeichnis:
+  %\setcounter{tocdepth}{3}
+  \tableofcontents
+   \it{ Bei dem Verdacht auf sexualisierte Gewalt in der Kinder- und Jugendarbeit wird auf den entsprechenden Anhang am Ende der Satzung verwiesen}
+  \newpage  
+  \setcounter{page}{1}
+
+%Jetzt geht es mit Inhalt los:
+
+\chapter{Grundlagen und Ziele der Katholischen jungen Gemeinde}
+In der Katholischen jungen Gemeinde (KjG) schließen sich junge Christ*innen zusammen. 
+Mitglied der KjG kann jede*r werden, der*die die Grundlagen und Ziele des Verbandes bejaht.
+Demokratisch und gleichberechtigt wählen alle Mitglieder altersunabhängig die Leitungen und
+entscheiden über die Inhalte und Arbeitsformen des Verbandes.
+Ihre jeweiligen Bedürfnisse und Interessen bestimmen das verbandliche Leben. Die Gruppen,
+Projekte und offenen Angebote der KjG bieten Raum für Begegnungen und Beziehungen,
+gemeinsame Erlebnisse und gemeinsames Handeln. In ihnen erfahren Kinder, Jugendliche und junge
+Erwachsene, dass sie ernst genommen werden und nicht allein stehen.
+
+Die KjG unterstützt sie darin, ihr Leben verantwortlich zu gestalten und eigene Lebensperspektiven zu entwickeln.
+Sie begleitet sie bei der Suche nach tragfähigen Lebensentwürfen und nach Orientierung.
+Sie ermöglicht ihnen einen Zugang zum christlichen Glauben und ermutigt sie zu einem selbstverantworteten religiösen Leben.
+
+Die KjG fördert auf vielfältige Weise, soziale, pädagogische und politische Verantwortung zu
+übernehmen und unterstützt die Entwicklung persönlicher Interessen und Fähigkeiten.
+
+Die KjG greift die Fragen und Anliegen von Kindern, Jugendlichen und jungen Erwachsenen auf
+und befähigt sie, sich in Kirche und Gesellschaft zu vertreten. Insbesondere setzt sie sich dafür
+ein, dass Kinder, Jugendliche und junge Erwachsene Pfarr- und Kommunalgemeinde gleichberechtigt mitgestalten können.
+Sie engagiert sich für Strukturen, die Mitbestimmung und Mitentscheidung ermöglichen.
+
+Der Zusammenschluss in der KjG schafft Voraussetzungen für eine wirksame Interessenvertretung in der Öffentlichkeit.
+Die KjG arbeitet darüber hinaus mit den Mitgliedsverbänden im BDKJ
+sowie mit anderen Verbänden und Organisationen zusammen.
+
+Mit ihrem Engagement steht die KjG für eine demokratische, gleichberechtigte und solidarische
+Gesellschaft und Kirche. Sie wendet sich gegen jede Art von Ausgrenzung und Unterdrückung von
+Menschen und gegen die Zerstörung der natürlichen Lebensgrundlagen.
+
+Die KjG setzt sich ein für eine Politik, die sich orientiert an der weltweiten Verwirklichung gleicher
+und gerechter Lebensbedingungen für alle Mädchen und Jungen, Frauen und Männer und an einer
+ökologisch verantworteten Lebensweise.
+
+In diesem Anliegen erklären sich die Mitglieder der KjG solidarisch mit anderen Kindern, Jugendlichen und jungen Erwachsenen.
+Sie suchen sowohl im eigenen Land als auch über Ländergrenzen
+hinweg die partnerschaftliche Zusammenarbeit und Begegnung mit ihnen.
+
+So versteht sich die KjG als Kirche in der Lebenswelt von Kindern, Jugendlichen und jungen Erwachsenen.
+\chapter{KjG in der Pfarrgemeinde/Ortsgruppe}
+Eine Ortsgruppe ist wie eine Pfarrgemeinschaft zu behandeln, jedoch ist sie nicht an eine Pfarrei
+gebunden. Im Folgenden wurde auf die explizite Nennung der Ortsgruppe verzichtet.
+\section{Mitglieder}
+Mitglied in der KjG kann jede*r werden, die*der die Grundlagen und Ziele des Verbandes bejaht.
+Die*der Einzelne wird Mitglied der KjG Pfarrgemeinschaft, indem sie*er das erklärt und die Pfarrleitung diese Erklärung annimmt.
+Das Mitglied ist grundsätzlich verpflichtet, den Mitgliedsbeitrag fristgerecht zu bezahlen.
+Die Höhe des jeweiligen Mitgliedsbeitrags wird von der jeweiligen
+Ebene festgelegt und erhoben.
+
+Besteht keine Anbindung an eine Pfarrgemeinschaft oder Ortsgruppe, kann der*die Einzelne
+die Mitgliedschaft gegenüber dem Diözesanverband erklären. Diese Erklärung wird wirksam,
+wenn sie von der Diözesanleitung angenommen wird.
+
+Eine Mitgliedschaft in der KjG kann als aktive oder passive Mitgliedschaft erworben werden.
+Die Mitgliedschaft erlischt durch Austritt, Ausschluss oder Tod. Der Austritt ist für das folgende Jahr
+schriftlich gegenüber der Pfarrleitung bzw. Diözesanleitung bis zum 31.12. des laufenden Jahres zu erklären.
+
+Über den Ausschluss eines Mitglieds entscheidet die Pfarrleitung bzw. Diözesanleitung nach Anhörung der*des Betroffenen.
+Das betroffene Mitglied kann gegen diesen Beschluss bei der
+Mitgliederversammlung bzw. Diözesankonferenz Berufung einlegen. Diese entscheidet verbindlich.
+\subsection{Aktive Mitglieder}
+Als aktives Mitglied nimmt sie*er an einer oder mehreren der angebotenen Gesellungs­ und Arbeitsformen teil.
+
+Durch die aktive Mitgliedschaft in der KjG haben Mitglieder ein Recht auf Mitbestimmung
+sowie die Chance auf Aus­ und Weiterbildung. Sie können Verantwortung übernehmen und selbst
+Angebote schaffen.
+
+Jedes aktive Mitglied ist stimmberechtigt und wählbar.
+\subsection{Passive Mitglieder}
+Passive Mitgliedschaften in der Katholischen jungen Gemeinde dienen der ideellen und/oder finanziellen Unterstützung der Arbeit des Verbandes.
+Der Mitgliedsbeitrag verbleibt bei der jeweiligen Ebene.
+
+Die passive Mitgliedschaft schließt eine Stimmberechtigung in der Katholischen jungen
+Gemeinde aus. Mitglieder einer passiven Mitgliedschaft dürfen nicht gewählt werden.
+
+Passive Mitglieder zählen nicht in die Stimmschlüsselberechnung hinein.
+\section{Die Pfarrgemeinschaft}
+Die Mitglieder der Katholischen jungen Gemeinde in der Pfarrei bilden die KjG Pfarrgemeinschaft.
+
+Sie ist Mitglied im Diözesanverband der KjG. Sie arbeitet mit anderen BDKJ-Mitgliedsverbänden
+zusammen und kann mit diesen den BDKJ bilden.
+
+Sie führt den Namen „Katholische junge Gemeinde (KjG) Pfarrgemeinschaft/Ortsgruppe N.N.“.
+Das Verbandszeichen ist der Seelenbohrer.
+
+Die KjG Pfarrgemeinschaft bestimmt nach demokratischen Regeln im Rahmen der Grundlagen
+und Ziele sowie der Satzung, Leitung, Aufgaben, Gesellungs- und Arbeitsformen entsprechend
+der örtlichen Situation.
+
+Die Leiter*innen der Teams, Gruppen, Clubs oder Arbeitskreise werden entweder von den Mitgliedern
+der jeweiligen Gesellungs- bzw. Arbeitsform gewählt oder durch die Pfarrleitung nach
+Anhörung der Pädagogischen Leitungsrunde berufen.
+
+Die KjG Pfarrgemeinschaft führt an den Diözesanverband einen Beitrag ab, dessen Höhe von der
+Diözesankonferenz beschlossen wird. Die KjG Pfarrgemeinschaft kann einen Pfarrbeitrag erheben,
+dessen Höhe in der Mitgliederversammlung beschlossen wird.
+
+Die Vertretung im Diözesanverband erfolgt durch die Pfarrleitung oder deren Delegierte.
+\subsection{Satzung der Pfarrgemeinschaft}
+Die KjG Pfarrgemeinschaft kann sich im Rahmen der Grundlagen und Ziele, sowie der Satzung
+des Diözesanverbandes eine eigene Pfarrsatzung geben. Existiert keine eigene Satzung, gilt die
+der nächsthöheren Ebene. Diese Satzung muss mindestens enthalten:
+\begin{itemize}
+  \item Anerkennung und Verpflichtung auf die Grundlagen und Ziele der KjG
+  \item Die Mitgliedschaft im Diözesanverband
+  \item Die Zugehörigkeit zum BDKJ
+\end{itemize}
+
+Und gemäß der nachfolgenden Paragraphen
+\begin{itemize}
+  \item Die Mitgliederversammlung
+  \item Die Pfarrleitung
+  \item Den Kindersenat
+\end{itemize}
+
+Diese Satzung kann gemäß der nachfolgenden Paragraphen enthalten:
+\begin{itemize}
+  \item Das Orga-team
+  \item Die Pädagogische Leitungsrunde
+\end{itemize}
+
+Die Satzung bedarf der Zustimmung durch die Diözesanleitung.\newline
+Gegen die Entscheidung der Diözesanleitung kann beim Diözesanausschuss Einspruch erhoben
+werden. Der Diözesanausschuss entscheidet abschließend.
+\subsection{Ausschluss der Pfarrgemeinschaft}
+Über den Ausschluss einer KjG Pfarrgemeinschaft entscheidet die Diözesanleitung nach Anhörung
+der Betroffenen und der zuständigen Arbeitsgemeinschaftsleitung.
+Diese Anhörung geschieht in einer außerordentlichen Mitgliederversammlung. Die betroffene KjG Pfarrgemeinschaft
+kann gegen diesen Beschluss beim Diözesanausschuss Berufung einlegen. 
+Der Diözesanausschuss entscheidet abschließend.
+
+\subsection{Auflösung der Pfarrgemeinschaft}
+Zu einer Auflösungsversammlung der KjG Pfarrgemeinschaft muss mindestens 14 Tage vorher
+schriftlich eingeladen werden. Der Einladung ist eine ausführliche Begründung beizufügen. Der
+Auflösung der KjG Pfarrgemeinschaft müssen drei Viertel der anwesenden stimmberechtigten
+Mitglieder zustimmen.
+
+Das Vermögen der KjG Pfarrgemeinschaft fällt bei Auflösung an den Diözesanverband.
+Dieser ist verpflichtet, das Vermögen der KjG Pfarrgemeinschaft zweckgebunden zu verwalten.
+Dies gilt im Falle eines Ausschlusses sinngemäß für Vermögen aus öffentlichen Bezuschussungen.
+Sollte sich die KjG Pfarrgemeinschaft innerhalb von drei Jahren neu konstituieren, ist ihr das
+Vermögen auszuhändigen. Ist dies nicht der Fall, fällt das verwaltete Vermögen an den Diözesanverband.
+
+\section{Die Organe der KjG Pfarrgemeinschaft}
+Die Organe der KjG Pfarrgemeinschaft sind die Mitgliederversammlung, die Pfarrleitung,
+die Pädagogische Leitungsrunde, das Orga-Team und der Kindersenat.
+
+\subsection{Die Mitgliederversammlung}
+Die Mitgliederversammlung ist das oberste beschlussfassende Organ der KjG Pfarrgemeinschaft.
+Sie trifft im Rahmen der Grundlagen und Ziele, sowie der Satzung des Diözesanverbandes und
+der Beschlüsse der Diözesankonferenz die grundlegenden Entscheidungen über die Arbeit der
+KjG Pfarrgemeinschaft.
+
+\subsubsection{Aufgaben der Mitgliederversammlung}
+Der Mitgliederversammlung sind insbesondere folgende Aufgaben vorbehalten:
+\begin{itemize}
+  \item die an die Mitgliederversammlung gerichteten Anträge
+    \begin{itemize}  
+      \item die Finanzen der KjG Pfarrgemeinschaft
+      \item die Pfarrsatzung
+      \item die Jahresplanung
+      \item den Pfarrbeitrag
+    \end{itemize}
+  \item Entgegennahme des Jahresberichtes der Pfarrleitung
+  \item Entgegennahme des Kassenberichtes
+  \item Entlastung der Pfarrleitung
+  \item Wahl der Pfarrleitung
+  \item Wahl der Kassenprüfenden
+  \item Wahl des Kindersenates (stimmberechtigt sind alle Dauermitglieder der KjG Pfarrgemeinschaft bis einschließlich 12 Jahre)
+  \item Abwahl einzelner Mitglieder der Pfarrleitung
+\end{itemize}
+
+\subsubsection{Zusammensetzung der Mitgliederversammlung}
+Stimmberechtigte Mitglieder der Mitgliederversammlung sind:
+\begin{itemize}
+  \item Die Mitglieder der KjG Pfarrgemeinschaft, sofern sie den Mitgliedsbeitrag für das laufende Jahr bezahlt haben
+\end{itemize}
+Beratende Mitglieder der Mitgliederversammlung sind:
+\begin{itemize}
+  \item Ein*e Hauptamtliche*r der Pfarrei
+  \item Ein Mitglied des Sachausschuss Jugend der Pfarrei
+  \item Ein Mitglied des Pfarrvorstandes des BDKJ
+  \item Ein Mitglied der Leitung der zuständigen Arbeitsgemeinschaft der KjG
+  \item Ein*e Vertreter*in des Diözesanverbandes der KjG
+  \item Die nicht stimmberechtigten Mitglieder der KjG Pfarrgemeinschaft
+
+\subsubsection{Einberufung, Ablauf und Beschlussfähigkeit der Mitgliederversammlung}
+Die Mitgliederversammlung findet wenigstens einmal jährlich statt. Sie wird von der Pfarrleitung
+drei Wochen vorher unter Bekanntgabe der Tagesordnung und der Frist für die Einreichung
+der Wahlvorschläge einberufen. Jedes Mitglied wird auf geeignete Weise eingeladen.
+Eine Mitgliederversammlung muss einberufen werden, wenn die Pädagogische Leitungsrunde,
+der Kindersenat oder 1/5 der Mitglieder dies beantragen. Anträge können vor und während der 
+Mitgliederversammlung eingebracht werden.
+
+Anträge auf Abwahl der Pfarrleitung und Anträge auf Satzungsänderung sind den Mitgliedern
+der Mitgliederversammlung mindestens 14 Tage vor dem Termin der Mitgliederversammlung mit
+Begründung zuzuleiten.
+
+Die Mitgliederversammlung beschließt und wählt mit einfacher Mehrheit der anwesenden, stimmberechtigten Mitglieder.
+Stimmenthaltungen bleiben unberücksichtigt. Abstimmungen über
+Abwahl der Pfarrleitung und Änderung der Satzung bedürfen der 2/3-Mehrheit der anwesenden,
+stimmberechtigten Mitglieder. Für den Ablauf der Mitgliederversammlung gilt im
+Übrigen die Geschäftsordnung der Diözesankonferenz sinngemäß. Über die Mitgliederversammlung
+wird Protokoll geführt und den Mitgliedern zugänglich gemacht.
+
+Die Mitgliederversammlung ist beschlussfähig, wenn frist- und formgerecht eingeladen wurde.
+\end{itemize}
+\subsection{Die Pfarrleitung}
+\subsubsection{Aufgaben der Pfarrleitung}
+Die Pfarrleitung ist verantwortlich für die Leitung und Vertretung \footnote{ vgl. §26 BGB} der KjG Pfarrgemeinschaft.
+Dabei ist jedes Mitglied der Pfarrleitung alleine vertretungsberechtigt.
+Ihre Aufgaben sind insbesondere:
+\begin{itemize}
+  \item Einberufung, Vorbereitung und Leitung der Mitgliederversammlung
+  \item Einberufung, Vorbereitung und Leitung der Pädagogischen Leitungsrunde, des Orga-Teams und des Kindersenates
+  \item Sorge für die Durchführung der Beschlüsse der Mitgliederversammlung
+  \item Vertretung und Mitarbeit auf der Diözesanebene der KjG
+  \item Vertretung der KjG Pfarrgemeinschaft in Kirche und Öffentlichkeit
+  \item Zusammenarbeit mit anderen KjG Pfarrgemeinschaften
+  \item Zusammenarbeit mit den anderen BDKJ Mitgliedsverbänden
+  \item Zusammenarbeit mit den in den Pfarreien tätigen Gemeinschaften und Gremien
+  \item Verantwortung für die Finanzen
+  \item Sorge um die Aus- und Weiterbildung der Mitarbeitenden durch den Verband (insbesondere der Gruppenleiter*innen)
+  \item Einbringen von Spiritualität
+\end{itemize}
+
+\subsubsection{Zusammensetzung der Pfarrleitung}
+
+Die Pfarrleitung ist paritätisch zu besetzen, ihr gehören mindestens an:
+Stimmberechtigt:
+\begin{itemize}
+  \item 2 Pfarrleiter
+  \item 2 Pfarrleiterinnen
+  \item 1 Geistlicher Leiter \footnoteremember{Berechtigung Geist}{
+    Das Amt der Geistlichen Leiterin und des Geistlichen Leiters kann von Personen wahrgenommenwerden,
+    die eine theologische oder religionspäd. Ausbildung abg. haben.
+  }
+  \item 1 Geistliche Leiterin \footnoterecall{Berechtigung Geist}
+\end{itemize}
+Die Aufgaben der Pfarrleitung können auch wahrgenommen werden, wenn nicht alle Stellen besetzt sind.
+Von der Verpflichtung zur Parität sind die KjG Pfarrgemeinschaften ausgenommen, in
+denen nur Mädchen und Frauen oder Jungen und Männer vertreten sind.
+
+Mindestens ein Mitglied der Pfarrleitung muss voll geschäftsfähig sein.
+Die stimmberechtigten Mitglieder der Pfarrleitung werden von der Mitgliederversammlung für
+zwei Jahre gewählt. Die stimmberechtigten Mitglieder der Pfarrleitung können ihren Rücktritt nur
+gegenüber der Mitgliederversammlung erklären.
+
+Sind alle Stellen der Pfarrleitung vakant, so dürfen deren Aufgaben von der
+Diözesanleitung übernommen werden. In diesem Fall hat die Diözesanleitung die Möglichkeit eine
+Stimme bei der Mitgliederversammlung wahrzunehmen.
+
+\subsection{Das Orga-Team}
+
+\subsubsection{Aufgaben des Orga-Teams}
+
+Das Orga-Team berät im Rahmen der Beschlüsse der Mitgliederversammlung die Arbeit der KjG
+Pfarrgemeinschaft und stimmt die Interessen der einzelnen Gesellungs- und Arbeitsformen ab,
+unbenommen der Letztverantwortung der Pfarrleitung.
+
+Dem Orga-Team sind insbesondere folgende Aufgaben vorbehalten:
+\begin{itemize}
+  \item Planung und Sorge für die Durchführung der Veranstaltungen und Aktionen der KjG Pfarrgemeinschaft
+  \item Gewinnung von Leiter*innen und freien Mitarbeitenden
+\end{itemize}
+
+\subsubsection{Zusammensetzun und Einberufung des Orga-Teams}
+Mitglied des Orga-Teams kann jedes Mitglied der Pfarrgemeinschaft werden. Das Orga-Team
+trifft sich nach Bedarf und wird von der Pfarrleitung einberufen und geleitet.
+
+\subsection{Die Pädagogische Leitungsrunde}
+
+\subsubsection{Aufgaben der Pädagogischen Leitungsrunde}
+Die Pädagogische Leitungsrunde dient den Leiter*innen der einzelnen Gesellungs- und Arbeitsformen als Ort für:
+\begin{itemize}
+  \item Erfahrungsaustausch
+  \item Weiterbildung
+  \item Informationen über die Situation der Mädchen und Jungen in der Pfarrgemeinde
+  \item Reflexion der Gruppenarbeit und des eigenen Leitungsverhaltens
+\end{itemize}
+
+\subsubsection{Zusammensetzung und Einberufung der Pädagogischen Leitungsrunde}
+Zur pädagogischen Leitungsrunde gehören:
+\begin{itemize}
+  \item Die Pfarrleitung
+  \item Die Leiter*innen der einzelnen Gesellungs- und Arbeitsformen
+\end{itemize}
+
+Gäste können von der Pädagogischen Leitungsrunde eingeladen werden.
+
+Die Pädagogische Leitungsrunde wird regelmäßig, mindestens viermal im Jahr,
+von der Pfarrleitung einberufen und geleitet.
+
+\subsection{Der Kindersenat}
+Der Kindersenat dient der Kindermitbestimmung in der Zeit zwischen den Mitgliederversammlungen.
+In den Kindersenat können Dauermitglieder der KjG Pfarrgemeinschaft bis einschließlich 12
+Jahre gewählt werden.
+
+Die stimmberechtigten Mitglieder des Kindersenats werden auf der Mitgliederversammlung von
+den bis einschließlich 12 Jahre alten Dauermitgliedern für die Dauer von einem Jahr gewählt.
+
+\subsubsection{Aufgaben des Kindersenates}
+Zu den Aufgaben des Kindersenats gehören:
+\begin{itemize}
+  \item Anliegen von Kindern in Pfarrleitungs- und Pädagogischer Leitungsrunde einbringen
+  \item Beratende Funktion bei Aktionen und Veranstaltungen für Kinder in der KjG Pfarrgemeinschaft
+\end{itemize}
+
+\subsubsection{Zusammensetzung und Einberufung des Kindersenats}
+
+Der Kindersenat ist paritätisch zu besetzen, ihm gehören mindestens an:
+Stimmberechtigt:
+\begin{itemize}
+  \item 2 Jungen
+  \item 2 Mädchen
+\end{itemize}
+Die Aufgaben des Kindersenates können auch dann wahrgenommen werden, wenn nicht alle Ämter besetzt sind.
+Von der Verpflichtung zur Parität sind die KjG Pfarrgemeinschaften ausgenommen,
+in denen nur Mädchen oder Jungen vertreten sind.
+
+Der Kindersenat wird regelmäßig, mindestens zweimal im Jahr, von der Pfarrleitung einberufen
+und von einem Mitglied der Pfarrleitung geleitet.
+
+\chapter{KjG auf mittlerer Ebene}
+
+\section{KjG Arbeitsgemeinschaften}
+
+Die KjG Pfarrgemeinschaften des Diözesanverbandes können zur besseren Wahrnehmung ihrer
+Aufgaben auf der mittleren Ebene Arbeitsgemeinschaften bilden.
+
+Sie führt den Namen „Katholische junge Gemeinde (KjG) Arbeitsgemeinschaft N.N.“. Das Ver-
+bandszeichen ist der Seelenbohrer.
+
+Vordringliche Aufgabe der Arbeitsgemeinschaft ist die Unterstützung, Förderung und Koordinie-
+rung der Arbeit der KjG Pfarrgemeinschaften.
+
+Die Arbeitsgemeinschaft hat keine Beitragshoheit.
+
+Alle beteiligten KjG Pfarrgemeinschaften müssen der Arbeitsgemeinschaft im Rahmen der Grundlagen
+und Ziele der KjG, sowie der Satzung der KjG Diözesanverband Regensburg eine eigene
+Satzung geben. Die Satzungsgebung muss einstimmig auf einer Konferenz der beteiligten Pfarreien
+beschlossen werden. Satzungsänderungen sind dann mit einer 2/3 Mehrheit möglich.
+
+Die Satzung muss enthalten:
+\begin{itemize}
+  \item Anerkennung und Verpflichtung auf die Grundlagen und Ziele der KjG
+  \item Die Mitgliedschaft im KjG Diözesanverband Regensburg
+  \item Die Zugehörigkeit zum BDKJ
+  \item Eine mindestens jährlich stattfindende Konferenz der beteiligten Pfarrgemeinschaften, bei der
+        die Geschäftsordnung der Diözesankonferenz der KjG Diözesanverband Regensburg gilt
+  \item Die Wahl einer paritätisch zu besetzenden Leitung
+\end{itemize}
+
+Die Satzung bedarf der Zustimmung der Diözesanleitung. Gegen die Entscheidung der Diözesan-
+leitung kann beim Diözesanausschuss Einspruch erhoben werden. Der Diözesanausschuss ent-
+scheidet abschließend. Zur Satzungsgebung ist die Diözesanleitung
+anzuhören.
+
+Der Arbeitsgemeinschaftskonferenz sind insbesondere folgende Aufgaben vorbehalten:
+\begin{itemize}
+  \item Erfahrungsaustausch und Koordinierung der Arbeit der beteiligten KjG Pfarrgemeinschaften
+  \item Beratung der Arbeit des Diözesanverbandes
+  \item Beratung und Beschlussfassung über Veranstaltungen und Aktionen der Arbeitsgemeinschaft
+  \item Planung von Schulungen für die Verantwortlichen der KjG Pfarrgemeinschaften
+  \item Beratung und Beschlussfassung über die Finanzen der Arbeitsgemeinschaft
+  \item Entgegennahme des Berichtes der Arbeitsgemeinschaftsleitung
+\end{itemize}
+\section{KjG Bezirksverbände}
+Der Diözesanverband kann sich in Bezirksverbände gliedern. Dafür gelten die entsprechenden
+Bestimmungen der Satzung des Bundesverbandes.
+\chapter{KjG in der Diözese}
+Der Diözesanverband der Katholischen jungen Gemeinde ist der Zusammenschluss der
+KjG Pfarrgemeinschaften in der Diözese.
+
+Der Diözesanverband ist Mitglied im Bundesverband der Katholischen jungen Gemeinde und im
+Diözesanverband des BDKJ.
+
+Er führt den Namen „Katholische junge Gemeinde (KjG) Diözesanverband Regensburg“.
+Das Verbandszeichen ist der Seelenbohrer.
+
+Aufgabe des Diözesanverbandes ist die Unterstützung, Förderung und Koordinierung der Arbeit
+der KjG Pfarrgemeinschaften und der Arbeitsgemeinschaften der KjG Pfarrgemeinschaften und
+deren Vertretung in Kirche und Gesellschaft.
+
+\section{Die Organe des Diözesanverbandes}
+Die Organe des Diözesanverbandes sind die Diözesankonferenz, der Diözesanausschuss und die
+Diözesanleitung.
+\subsection{Die Diözesankonferenz}
+Die Diözesankonferenz ist das oberste beschlussfassende Organ des Diözesanverbandes. Sie
+trifft im Rahmen der Grundlagen und Ziele, sowie der Satzung des Bundesverbandes und der
+Beschlüsse der Bundeskonferenz die grundlegenden Entscheidungen über die Arbeit des Diöze-
+sanverbandes.
+\subsubsection{Aufgaben der Diözesankonferenz}
+Der Diözesankonferenz sind insbesondere folgende Aufgaben vorbehalten:
+\begin{itemize}	
+  \item Beschlussfassung über:
+    \begin{itemize} 
+      \item die Diözesansatzung
+      \item den Diözesanbeitrag
+      \item die Jahresplanung
+      \item das Schulungsprogramm
+      \item gemeinsame Aktionen
+      \item die Einrichtung und Auflösung von diözesanen Teams und Arbeitsgruppen
+    \end{itemize}
+  \item Entgegennahme der Tätigkeitsberichte der Diözesanleitung und des Diözesanausschusses
+  \item Entgegennahme des Finanzberichtes
+  \item Entlastung der Diözesanleitung
+  \item Wahl:
+    \begin{itemize}
+      \item der Diözesanleitung
+      \item des Diözesanausschusses
+      \item des Wahlausschusses
+      \item der Kassenprüfung
+      \item der Delegierten für die Bundeskonferenz, den Bundesrat und die 
+            Mitgliederversammlungen der Bundesstelle der Katholischen jungen Gemeinde e.V. und sowie für die
+            Diözesanversammlung des BDKJ
+      \item der Delegierten der Mitgliederversammlung der KJG Landesstelle e.V., sofern die Diözesanleitung
+            unbesetzt ist
+      \item ggf. der Mitglieder von Sachausschüssen
+    \end{itemize}
+  \item Abwahl einzelner Mitglieder der Diözesanleitung beziehungsweise des Diözesanausschusses
+\end{itemize}
+\subsubsection{Ausschüsse}
+Die Diözesankonferenz kann für bestimmte Aufgaben paritätisch besetzte Sachausschüsse einrichten.
+Sachausschüsse zu geschlechtsspezifischen Belangen sind hiervon ausgenommen.
+Den Vorsitz der Sachausschüsse hat ein Mitglied der Diözesanleitung inne, dieser kann delegiert
+werden.
+
+Der Wahlausschuss leitet die Wahlen. Der Wahlausschuss ist paritätisch zu besetzen. Den Vorsitz
+des Wahlausschusses hat ein Mitglied der Diözesanleitung inne, dieser kann delegiert werden.
+
+\subsubsection{Zusammensetzung der Diözesankonferenz}
+Stimmberechtigte Mitglieder der Diözesankonferenz sind:
+\begin{itemize}
+  \item 2 Delegierte pro KjG Pfarrgemeinschaft
+  \item Die Mitglieder der Diözesanleitung
+\end{itemize}
+
+Die Delegation ist folgendermaßen zu besetzen:
+\begin{itemize}
+  \item 1 weibliches Mitglied der Pfarrleitung bzw. von Pfarrleitung oder Mitgliederversammlung
+        delegierte Frau
+  \item 1 männliches Mitglied der Pfarrleitung bzw. von Pfarrleitung oder Mitgliederversammlung
+        delegierter Mann
+\end{itemize}
+
+Von der Verpflichtung zur Parität sind die KjG Pfarrgemeinschaften ausgenommen, in denen nur
+Mädchen und Frauen oder Jungen und Männer vertreten sind.
+
+Beratende Mitglieder sind:
+\begin{itemize}
+  \item Die Diözesanreferent*innen
+  \item Die Mitglieder des Diözesanausschusses
+  \item Ein Mitglied von Sachausschüssen und diözesanen Projektgruppen
+  \item Ein Mitglied der Bundesleitung der Katholischen jungen Gemeinde
+  \item Ein*e Vertreter*in des Landesvorstandes der KjG-Landesarbeitsgemeinschaft Bayern
+  \item Ein Mitglied des BDKJ Diözesanvorstandes
+  \item Der*die Vorsitzende des Vereins zur Förderung der Katholischen jungen Gemeinde in der
+        Diözese Regensburg e.V.
+  \item Je ein Mitglied der diözesanen Teams und Arbeitsgruppen
+        \footnoteremember{Dauermitglied}{Das jeweilige Mitglied muss Dauermitglied im KjG Diözesanverband Regensburg sein}
+  \item Je ein Mitglied der Leitung der Arbeitsgemeinschaften der Pfarreien \footnoterecall{Dauermitglied}
+\end{itemize}
+
+Gäste können von der Diözesanleitung eingeladen werden.
+\subsubsection{Einberufung und Ablauf der Diözesankonferenz}
+Die Diözesankonferenz tritt mindestens einmal jährlich zusammen und wird von der Diözesanleitung
+einberufen und geleitet. Sie ist in der Regel öffentlich.
+Eine außerordentliche Diözesankonferenz muss einberufen werden, wenn der Diözesanausschuss oder ein
+Drittel der Pfarrgemeinschaften dies beantragen.
+
+Der Ablauf der Diözesankonferenz regelt sich nach der Geschäftsordnung.
+
+\subsubsection{Änderung der Satzung des Diözesanverbandes}
+Änderungen der Diözesansatzung können nur beschlossen werden, wenn zwei Drittel der anwesenden
+stimmberechtigten Mitglieder zustimmen und der Änderungsantrag den Mitgliedern der
+Diözesankonferenz mindestens vier Wochen vorher schriftlich mitgeteilt worden ist.
+
+\subsection{Der Diözesanausschuss}
+Der Diözesanausschuss berät im Rahmen der Grundlagen und Ziele und der Beschlüsse der Diözesankonferenz
+über die Arbeit und beschließt über laufende wichtige Angelegenheiten des Diözesanverbandes.
+
+\subsubsection{Aufgaben des Diözesanausschusses}
+Dem Diözesanausschuss sind insbesondere folgende Aufgaben vorbehalten:
+\begin{itemize}
+  \item Planung und Vorbereitung der Diözesankonferenz
+  \item Sorge für die Durchführung der Beschlüsse der Diözesankonferenz
+  \item Beschlussfassung über den Etat des Diözesanverbandes
+  \item Schlichtung und Entscheidung bei Konfliktfällen
+        \footnote{Betroffene Mitglieder haben bei der Entscheidung kein Stimmrecht}
+\end{itemize}
+
+\subsubsection{Zusammensetzung des Diözesanauschusses}
+Stimmberechtigte Mitglieder des Diözesanausschusses sind:
+\begin{itemize}
+  \item 4 weibliche Mitglieder der Pfarrleitungen bzw. Mitglieder einer Pfarrgemeinschaft, die von der
+        Mitgliederversammlung ein Mandat erhalten haben. Von diesen sollte mindestens eine Person
+        Geistliche Leiterin sein.
+  \item 4 männliche Mitglieder der Pfarrleitungen bzw. Mitglieder einer Pfarrgemeinschaft, die von
+        der Mitgliederversammlung ein Mandat erhalten haben. Von diesen sollte mindestens eine
+        Person Geistlicher Leiter sein.
+  \item Die Mitglieder der Diözesanleitung
+\end{itemize}
+
+Beratende Mitglieder sind:
+\begin{itemize}
+  \item Die Diözesanreferent*innen
+\end{itemize}
+
+Die Aufgaben des Diözesanausschusses können auch dann wahrgenommen werden, wenn nicht
+alle Stellen besetzt sind.
+
+Das Mindestalter für den Diözesanausschuss liegt bei 16 Jahren. Von den stimmberechtigten Mit-
+gliedern des Diözesanausschusses, die nicht Teil der Diözesanleitung sind, muss aber mindestens
+ein Mitglied, unabhängig des Geschlechts, voll geschäftsfähig sein.
+
+Gäste können von der Diözesanleitung oder dem Diözesanausschuss eingeladen werden.
+
+Die Vertretungen der Pfarrgemeinschaften werden von der Diözesankonferenz für zwei Jahre
+gewählt. Die Wahl ist persönlich; eine Vertretung im Diözesanausschuss ist nicht möglich. Mit
+dem Wegfall der Voraussetzung für den Diözesanausschuss erlischt die Mitgliedschaft im Diöze-
+sanausschuss.
+
+\subsubsection{Einberufung und Ablauf des Diözesanausschusses}
+Der Diözesanausschuss tritt nach Bedarf, mindestens jedoch zweimal jährlich zusammen. Er wird
+von der Diözesanleitung mindestens 14 Tage vorher einberufen. Den Vorsitz hat die Diözesanlei-
+tung.
+
+\subsection{Die Diözesanleitung}
+
+\subsubsection{Aufgaben der Diözesanleitung}
+Zu den Aufgaben der Diözesanleitung gehören insbesondere:
+\begin{itemize}
+  \item Leitung und Geschäftsführung des Diözesanverbandes im Rahmen der Grundlagen und Ziele
+        des Verbandes, sowie der Satzung und der Beschlüsse der Organe des Bundes- und Diözesanverbandes
+  \item Vertretung des Diözesanverbandes im Bundesverband
+  \item Vertretung des Diözesanverbandes im BDKJ auf Diözesanebene
+  \item Vertretung des Diözesanverbandes in der Landesarbeitsgemeinschaft der KjG
+  \item Vertretung des Diözesanverbandes in Kirche und Gesellschaft
+\end{itemize}
+
+Zur Erfüllung ihrer Aufgaben kann die Diözesanleitung mit Zustimmung des Diözesanausschusses
+Referent*innen, Sachbearbeitende sowie Mitarbeitende berufen.
+
+\subsubsection{Zusammensetzung der Diözesanleitung}
+Zur Diözesanleitung gehören:
+\begin{itemize}
+  \item3 Diözesanleiterinnen, wovon eine Geistliche Leiterin 
+       \footnote{
+           Das Amt der Geistlichen Leiterin kann von Frauen wahrgenommen werden, die eine theologische
+           oder religionspädagogische Ausbildung abgeschlossen haben.
+       }
+       ist
+  \item 3 Diözesanleiter, wovon einer Geistlicher Leiter
+        \footnote{
+            Das Amt des Geistlichen Leiters kann von Männern wahrgenommen werden, die eine theologische
+            oder religionspädagogische Ausbildung abgeschlossen haben. Derzeit kann dieses Amt in Absprache
+            mit dem bischöflichen Stuhl nur von ordinierten, katholischen Priestern wahrgenommen werden.	
+        }
+        ist
+\end{itemize}
+
+Die Aufgaben der Diözesanleitung können auch dann wahrgenommen werden, wenn nicht alle
+Ämter besetzt sind. Mindestens ein Mitglied der Diözesanleitung muss voll geschäftsfähig sein.
+
+Kann eine Stelle der Geistlichen Leitung nicht besetzt werden, kann eine weitere Diözesanleitung
+gewählt werden. Kann keine der beiden Geistlichen Leitungsstellen besetzt werden, entscheidet
+die Diözesankonferenz, welche Position bis zur nächsten Wahl unbesetzt bleibt.
+
+Die Diözesanleitung wird von der Diözesankonferenz für zwei Jahre gewählt. Die Mitglieder der
+Diözesanleitung können ihren Rücktritt nur vor der Diözesankonferenz erklären.
+
+\subsubsection{Kontakt zu KjG Pfarrgemeinschaften}
+Die Wahrnehmung der Kontakte zu den KjG Pfarrgemeinschaften ist Aufgabe von Diözesanleitung
+und gewähltem Diözesanausschuss. Bei Bedarf können weitere interessierte KjG Mitglieder,
+vorzugsweise mit Erfahrung in der KjG Pfarreiarbeit, mit dieser Aufgabe betraut werden.
+
+\section{Auflösung des Diözesanverbandes}
+Zu einer Auflösungsversammlung des Diözesanverbandes muss mindestens 28 Tage vorher
+schriftlich eingeladen werden. Der Einladung ist eine Begründung hinzuzufügen. Drei Viertel der
+anwesenden stimmberechtigten Mitglieder müssen der Auflösung zustimmen. Das weitere Vorgehen
+im Falle der Auflösung regelt die Satzung des Bundesverbandes.
+\chapter{Schlussbestimmungen}
+Die Neufassung der Satzung tritt nach ihrer Beschlussfassung durch die Bundeskonferenz der
+Katholischen jungen Gemeinde 2017 in Kraft.
+
+% Ende des Dokumentes
 \end{document}
