@@ -9,7 +9,7 @@ Bei Problemen an mich wenden :-)
 # Satzungsänderungsanträge
 
 ## Branching
-Wenn ein Antrag erstellt werden soll, bitte einen neuen branch vom aktuellen tag (aktuell v1.0) erstellen und dort Änderungen vornehmen.
+Wenn ein Antrag erstellt werden soll, bitte einen neuen branch vom aktuellen tag erstellen und dort Änderungen vornehmen.
 
 ## Antragsformat:
 
