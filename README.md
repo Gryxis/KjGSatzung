@@ -3,4 +3,5 @@ Satzung der KjG Regensburg
 
 ## generieren der PDF
 
-zum generieren der PDF 'pdflatex kjgsatzung.tex' ausführen, oder generatro der eigenen wahl ausführen.
+Zum Generieren der PDF  wurde 'pdflatex kjgsatzung.tex' ausgeführt, oder generator der eigenen Wahl ausführen.
+Bei Problemen an mich wenden :-)
