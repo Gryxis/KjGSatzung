@@ -1,5 +1,5 @@
 \documentclass[12pt]{report}
-
+\usepackage[a4paper, left=2cm,top=2cm]{geometry}
 
 %------------------------------------
 %   Required Packages
@@ -10,10 +10,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english,ngerman]{babel} % deutsche Bezeichnungen und Worttrennung… 
 \usepackage[T1]{fontenc} % Wird u.a. f\"ur das Trennen von W\"ortern  mit Umlauten genutzt.
-\usepackage[a4paper, left=2cm,top=2cm]{geometry}
-%------------------------------------
+\usepackage{tgbonum} %schriftarten
+%------------------------------------------
 %    Farben
-%------------------------------------
+%------------------------------------------
 
 \definecolor{weiß}{RGB}{255,255,255}
 \definecolor{kjggrau}{RGB}{119,120,123}
@@ -21,6 +21,9 @@
 \definecolor{kjgblau}{RGB}{54,95,145}
 \definecolor{kjgtuerkis}{RGB}{0, 181,190}
 
+%------------------------------------------
+% Start-cover als Einband 
+%------------------------------------------
 \backgroundsetup{
  scale=1,
  angle=0,
@@ -67,9 +70,11 @@
   %Zitat Thoms Morus
     \pagestyle{empty}
     \vspace*{\fill}
-    \begin{Huge}
+   { \fontfamily{ptm}\selectfont
+     \begin{Huge}
      "Tradition ist nicht das Halten der Asche, sondern das Weitergeben der Flamme"
-    \end{Huge}
+     \end{Huge}
+    }
     \newline
     \begin{large}
       - Thomas Morus -
