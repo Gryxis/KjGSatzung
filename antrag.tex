@@ -1,0 +1,92 @@
+\documentclass[12pt]{report}
+\usepackage[a4paper, left=2cm,top=2cm]{geometry}
+
+%keine einzelnen Zeilen am Anfang/Ende:
+\widowpenalty = 10000
+\clubpenalty = 10000
+%------------------------------------
+%   Required Packages
+%------------------------------------
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[pages=some]{background}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel} % deutsche Bezeichnungen und Worttrennung… 
+\usepackage[T1]{fontenc} % Wird u.a. f\"ur das Trennen von W\"ortern  mit Umlauten genutzt.
+\usepackage{tgbonum} %schriftarten
+%------------------------------------------
+%    Farben
+%------------------------------------------
+
+\definecolor{weiß}{RGB}{255,255,255}
+\definecolor{kjggrau}{RGB}{119,120,123}
+\definecolor{kjghellgrau}{RGB}{192,192,192}
+\definecolor{kjgblau}{RGB}{54,95,145}
+\definecolor{kjgtuerkis}{RGB}{0, 181,190}
+
+%------------------------------------------
+%markierung um gelöschte oder hinzugefügte sachen zu markieren
+\usepackage{changes} 
+%------------------------------------------
+%------------------------------------------
+% Start-cover als Einband 
+%------------------------------------------
+\backgroundsetup{
+ scale=1,
+ angle=0,
+ color=white,
+ placement=top,
+ opacity = 1,
+ contents= {
+  \includegraphics[width=\paperwidth, height=26.80cm]{satzung_einband.png}
+ }
+}
+
+%--------------------------------------
+% Fußnoten mehfrach referenzieren:
+% Quelle:
+% https://www.macuser.de/threads/latex-fussnote-mehrfach-referenzieren.519258/
+\newcommand{\footnoteremember}[2]{
+  \footnote{#2}
+  \newcounter{#1}
+  \setcounter{#1}{\value{footnote}}
+}
+\newcommand{\footnoterecall}[1]{%
+  \footnotemark[\value{#1}]
+}
+%--------------------------------------
+
+
+
+\title{Satzung KjG Regensburg}
+\author{}
+\setcounter{chapter}{-1}
+
+\begin{document}
+
+
+ \setcounter{page}{1}
+
+
+%alles links zentrieren und keine einrückung bei Paragraphen:
+\begin{flushleft}
+%Jetzt geht es mit Inhalt los:
+Die Diözesankonferenz möge beschließen folgende markierte Passagen aus der Satzung zu streichen:
+
+\subsubsection{Zusammensetzung des Diözesanauschusses}
+Stimmberechtigte Mitglieder des Diözesanausschusses sind:
+\begin{itemize}
+  \item 4 weibliche Mitglieder der Pfarrleitungen bzw. Mitglieder einer Pfarrgemeinschaft, die von der
+        Mitgliederversammlung ein Mandat erhalten haben. \deleted{Von diesen sollte mindestens eine Person
+        Geistliche Leiterin sein.}
+  \item 4 männliche Mitglieder der Pfarrleitungen bzw. Mitglieder einer Pfarrgemeinschaft, die von
+        der Mitgliederversammlung ein Mandat erhalten haben. \deleted{Von diesen sollte mindestens eine
+        Person Geistlicher Leiter sein.}
+  \item Die Mitglieder der Diözesanleitung
+\end{itemize}
+
+\section*{Begründung}
+Das Amt des DA-Geist wurde in den letzten Jahren nicht besetzt. Wir empfehlen eine Abschaffung des expliziten Amtes eines DA-Geist, da dies den Wahlprozess vereinfacht und eine starke spirituelle Einbringung der DA Mitglieder dadurch in keiner Weise ausgeschlossen wird
+% Ende des Dokumentes
+\end{flushleft}
+\end{document}
