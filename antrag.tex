@@ -1,0 +1,384 @@
+\documentclass[12pt]{report}
+\usepackage[a4paper, left=2cm,top=2cm]{geometry}
+
+%keine einzelnen Zeilen am Anfang/Ende:
+\widowpenalty = 10000
+\clubpenalty = 10000
+%------------------------------------
+%   Required Packages
+%------------------------------------
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[pages=some]{background}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel} % deutsche Bezeichnungen und Worttrennung… 
+\usepackage[T1]{fontenc} % Wird u.a. f\"ur das Trennen von W\"ortern  mit Umlauten genutzt.
+\usepackage{tgbonum} %schriftarten
+%------------------------------------------
+%    Farben
+%------------------------------------------
+
+\definecolor{weiß}{RGB}{255,255,255}
+\definecolor{kjggrau}{RGB}{119,120,123}
+\definecolor{kjghellgrau}{RGB}{192,192,192}
+\definecolor{kjgblau}{RGB}{54,95,145}
+\definecolor{kjgtuerkis}{RGB}{0, 181,190}
+
+
+%------------------------------------------
+% hyperlink zu internetseiten
+%------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=kjgblau,      
+    urlcolor=kjgtuerkis,
+}
+%------------------------------------------
+
+%------------------------------------------
+% Start-cover als Einband 
+%------------------------------------------
+\backgroundsetup{
+ scale=1,
+ angle=0,
+ color=white,
+ placement=top,
+ opacity = 1,
+ contents= {
+  \includegraphics[width=\paperwidth, height=26.80cm]{satzung_einband.png}
+ }
+}
+
+%--------------------------------------
+% Fußnoten mehfrach referenzieren:
+% Quelle:
+% https://www.macuser.de/threads/latex-fussnote-mehrfach-referenzieren.519258/
+\newcommand{\footnoteremember}[2]{
+  \footnote{#2}
+  \newcounter{#1}
+  \setcounter{#1}{\value{footnote}}
+}
+\newcommand{\footnoterecall}[1]{%
+  \footnotemark[\value{#1}]
+}
+%--------------------------------------
+
+
+
+\title{Satzung KjG Regensburg}
+\author{}
+\setcounter{chapter}{-1}
+
+\begin{document}
+
+  %Inhaltsverzeichnis:
+  %\setcounter{tocdepth}{3}
+  \setcounter{page}{1}
+
+
+%alles links zentrieren und keine einrückung bei Paragraphen:
+\begin{flushleft}
+%Jetzt geht es mit Inhalt los:
+Die Diözesankonferenz möge beschließen:
+
+Die Satzung des KjG Diözesanverbandes Regensburg wird wie folgt angepasst:
+\chapter{Grundlagen und Ziele der Katholischen jungen Gemeinde}
+
+\chapter{KjG in der Pfarrgemeinde/Ortsgruppe}
+\section{Mitglieder}
+
+\section{Die Pfarrgemeinschaft}
+
+\section{Die Organe der KjG Pfarrgemeinschaft}
+\subsection{Die Mitgliederversammlung}
+\subsection{Die Pfarrleitung}
+\subsubsection{Zusammensetzung der Pfarrleitung}
+
+Die Pfarrleitung ist {\color{red} geschlechtergerecht\footnoteremember{geschlechtergerecht}{Geschlechtergerecht im Rahmen dieser Satzung bedeutet: Gremien (und Ämter) werden mit männlichen und
+weiblichen Personen paritätisch besetzt. Bei Gremien mit einer Größe von bis zu 10 Personen wird zusätzlich
+eine, bei mehr als 10 Personen zwei Stellen für Personen diversen Geschlechts eingerichtet.}} zu besetzen, ihr gehören mindestens an:
+Stimmberechtigt:
+\begin{itemize}
+  \item 5 Pfarrleiter*innen (2m, 2w, 1d)
+  \item {\color{red}2 Geistliche Leiter*innen unterschiedlichen Geschlechts\footnoteremember{Berechtigung Geist}{
+    Das Amt der Geistlichen Leiterin und des Geistlichen Leiters kann von Personen wahrgenommen werden,
+    die eine theologische oder religionspäd. Ausbildung abg. haben.
+  }}
+\end{itemize}
+Die Aufgaben der Pfarrleitung können auch wahrgenommen werden, wenn nicht alle Stellen besetzt sind.
+{\color{red} Von der Verpflichtung zur geschlechtergerechten Besetzung sind die KjG Pfarrgemeinschaften ausgenommen, in
+denen nur Personen eines Geschlechts vertreten sind.}
+
+Mindestens ein Mitglied der Pfarrleitung muss voll geschäftsfähig sein.
+Die stimmberechtigten Mitglieder der Pfarrleitung werden von der Mitgliederversammlung für
+zwei Jahre gewählt. Die stimmberechtigten Mitglieder der Pfarrleitung können ihren Rücktritt nur
+gegenüber der Mitgliederversammlung erklären.
+
+Sind alle Stellen der Pfarrleitung vakant, so dürfen deren Aufgaben von der
+Diözesanleitung übernommen werden. In diesem Fall hat die Diözesanleitung die Möglichkeit eine
+Stimme bei der Mitgliederversammlung wahrzunehmen.
+
+\subsection{Das Orga-Team}
+\subsection{Die Pädagogische Leitungsrunde}
+\subsubsection{Aufgaben der Pädagogischen Leitungsrunde}
+Die Pädagogische Leitungsrunde dient den Leiter*innen der einzelnen Gesellungs- und Arbeitsformen als Ort für:
+\begin{itemize}
+  \item Erfahrungsaustausch
+  \item Weiterbildung
+  \item Informationen über die Situation der {\color{red} Kinder} in der Pfarrgemeinde
+  \item Reflexion der Gruppenarbeit und des eigenen Leitungsverhaltens
+\end{itemize}
+
+\subsection{Der Kindersenat}
+
+\subsubsection{Zusammensetzung und Einberufung des Kindersenats}
+
+Der Kindersenat ist {\color{red}geschlechtergerecht} zu besetzen, ihm gehören mindestens an:
+Stimmberechtigt:
+{\color{red}
+\begin{itemize}
+  \item 2 männliche Kinder
+  \item 2 weibliche Kinder
+  \item 1 diverses Kind
+\end{itemize}
+} %end color red
+Die Aufgaben des Kindersenates können auch dann wahrgenommen werden, wenn nicht alle Ämter besetzt sind.
+{\color{red}Von der Verpflichtung zur geschlechtergerechten Besetzung sind die KjG Pfarrgemeinschaften ausgenommen,
+in denen nur Personen eines Geschlechts vertreten sind.}
+
+Der Kindersenat wird regelmäßig, mindestens zweimal im Jahr, von der Pfarrleitung einberufen
+und von einem Mitglied der Pfarrleitung geleitet.
+
+\chapter{KjG auf mittlerer Ebene}
+
+\section{KjG Arbeitsgemeinschaften}
+[...]
+
+Die Satzung muss enthalten:
+\begin{itemize}
+  \item Anerkennung und Verpflichtung auf die Grundlagen und Ziele der KjG
+  \item Die Mitgliedschaft im KjG Diözesanverband Regensburg
+  \item Die Zugehörigkeit zum BDKJ
+  \item Eine mindestens jährlich stattfindende Konferenz der beteiligten Pfarrgemeinschaften, bei der
+        die Geschäftsordnung der Diözesankonferenz der KjG Diözesanverband Regensburg gilt
+  {\color{red}\item Die Wahl einer geschlechtergerecht zu besetzenden Leitung}
+\end{itemize}
+\chapter{KjG in der Diözese}
+
+\section{Gemeinnützigkeit}
+\section{Die Organe des Diözesanverbandes}
+\subsection{Die Diözesankonferenz}
+\subsubsection{Ausschüsse}
+Die Diözesankonferenz kann für bestimmte Aufgaben {\color{red}geschlechtergerecht} besetzte Sachausschüsse einrichten.
+Sachausschüsse zu geschlechtsspezifischen Belangen sind hiervon ausgenommen.
+Den Vorsitz der Sachausschüsse hat ein Mitglied der Diözesanleitung inne, dieser kann delegiert
+werden.
+
+Der Wahlausschuss leitet die Wahlen. Der Wahlausschuss ist {\color{red}geschlechtergerecht} zu besetzen. Den Vorsitz
+des Wahlausschusses hat ein Mitglied der Diözesanleitung inne, dieser kann delegiert werden.
+
+\subsubsection{Zusammensetzung der Diözesankonferenz}
+Stimmberechtigte Mitglieder der Diözesankonferenz sind:
+\begin{itemize}
+  \item 2 Delegierte pro KjG Pfarrgemeinschaft
+  \item Die Mitglieder der Diözesanleitung
+\end{itemize}
+
+Die Delegation ist folgendermaßen zu besetzen:
+\begin{itemize}
+  \item{\color{red} 2 Mitglieder der Pfarrleitung bzw. von Pfarrleitung oder Mitgliederversammlung
+        Delegierte unterschiedlichen Geschlechts}
+\end{itemize}
+
+{\color{red}Von der Verpflichtung zur geschlechtergerechten Besetzung sind die KjG Pfarrgemeinschaften ausgenommen,
+in denen nur Personen eines Geschlechts vertreten sind.}
+
+Beratende Mitglieder sind:
+\begin{itemize}
+  \item Die Diözesanreferent*innen
+  \item Die Mitglieder des Diözesanausschusses
+  \item Ein Mitglied von Sachausschüssen und diözesanen Projektgruppen
+  \item Ein Mitglied der Bundesleitung der Katholischen jungen Gemeinde
+  \item Ein*e Vertreter*in des Landesvorstandes der KjG-Landesarbeitsgemeinschaft Bayern
+  \item Ein Mitglied des BDKJ Diözesanvorstandes
+  \item Der*die Vorsitzende des Vereins zur Förderung der Katholischen jungen Gemeinde in der
+        Diözese Regensburg e.V.
+  \item Je ein Mitglied der diözesanen Teams und Arbeitsgruppen
+        \footnoteremember{Dauermitglied}{Das jeweilige Mitglied muss Dauermitglied im KjG Diözesanverband Regensburg sein}
+  \item Je ein Mitglied der Leitung der Arbeitsgemeinschaften der Pfarreien \footnoterecall{Dauermitglied}
+\end{itemize}
+
+Gäste können von der Diözesanleitung eingeladen werden.
+
+\subsection{Der Diözesanausschuss}
+\subsubsection{Zusammensetzung des Diözesanauschusses}
+Stimmberechtigte Mitglieder des Diözesanausschusses sind:
+\begin{itemize}
+  \item 4 weibliche Mitglieder der Pfarrleitungen bzw. Mitglieder einer Pfarrgemeinschaft, die von der
+        Mitgliederversammlung ein Mandat erhalten haben. Von diesen sollte mindestens eine Person
+        Geistliche Leiterin sein.
+  \item 4 männliche Mitglieder der Pfarrleitungen bzw. Mitglieder einer Pfarrgemeinschaft, die von
+        der Mitgliederversammlung ein Mandat erhalten haben. Von diesen sollte mindestens eine
+        Person Geistlicher Leiter sein.
+  {\color{red}\item 1 diverses Mitglied der Pfarrleitungen bzw. Mitglieder einer Pfarrgemeinschaft, die von
+        der Mitgliederversammlung ein Mandat erhalten haben.}
+  \item Die Mitglieder der Diözesanleitung
+\end{itemize}
+\subsection{Die Diözesanleitung}
+\subsubsection{Zusammensetzung der Diözesanleitung}
+Zur Diözesanleitung gehören:
+\begin{itemize}
+  {\color{red}\item 3 weibliche Mitglieder}, wovon eine Geistliche Leiterin 
+       \footnote{
+           Das Amt der Geistlichen Leiterin kann von Frauen wahrgenommen werden, die eine theologische
+           oder religionspädagogische Ausbildung abgeschlossen haben.
+       }
+       ist
+  {\color{red}\item 3 männliche Mitglieder}, wovon einer Geistlicher Leiter
+        \footnote{
+            Das Amt des Geistlichen Leiters kann von Männern wahrgenommen werden, die eine theologische
+            oder religionspädagogische Ausbildung abgeschlossen haben. Derzeit kann dieses Amt in Absprache
+            mit dem bischöflichen Stuhl nur von ordinierten, katholischen Priestern wahrgenommen werden.	
+        }
+        ist
+    {\color{red}\item 1 diverses Mitglied}
+\end{itemize}
+
+
+\section{Auflösung des Diözesanverbandes}
+
+\part*{Anhänge}
+\addcontentsline{toc}{part}{Anhänge}
+
+\chapter*{Geschäftsordnung der Diözesankonferenz}
+\addcontentsline{toc}{chapter}{Geschäftsordnung der Diözesankonferenz}
+
+\subsection*{§6 Stellvertretung}
+Die stimmberechtigten Mitglieder können sich bei der Diözesankonferenz vertreten lassen. Die Vertretung
+der Delegierten bedarf der Zustimmung der Pfarrleitung. Frauen können nur durch Frauen, Männer nur durch
+Männer {\color{red} und diverse Delegierte nur durch diverse Personen} vertreten werden. Die Vereinigung mehrerer Stimmen auf eine Person ist unzulässig.
+\subsection*{§7 Leitung}
+Die Leitung der Diözesankonferenz obliegt der Diözesanleitung. Sie bestimmt, welches Mitglied den Vorsitz
+führt. Sie kann den Vorsitz delegieren. {\color{red}Die*der} jeweilige Vorsitzende kann sich an den Beratungen nicht beteiligen.
+Wenn {\color{red}sie*er} das Wort ergreifen will, muss der Vorsitz an andere Personen abgegeben werden.
+{\color{red} Die*der} Vorsitzende kann jederzeit das Wort zu einer Feststellung ergreifen.
+
+
+\subsection*{§10 Beschlussfähigkeit}
+Die Diözesankonferenz ist beschlussfähig, wenn ordnungsgemäß eingeladen wurde und wenigstens 50 Prozent
+der stimmberechtigten Mitglieder anwesend sind sowie {\color{red}kein Geschlecht mehr als 75\% der stimmberechtigten Mitglieder ausmacht}.
+
+Die Diözesankonferenz gilt als beschlussfähig, solange die Beschlussunfähigkeit nicht ausdrücklich
+festgestellt wird. Ist die Beschlussunfähigkeit festgestellt, hat {\color{red}die*der} Vorsitzende die Sitzung sofort aufzuheben.
+
+
+\subsection*{§13 Beratungen}
+Das Wort wird durch {\color{red}die*den Vorsitzende*n} in der Reihenfolge des Eingangs der Wortmeldungen erteilt.
+{\color{red} Es werden geschlechtergetrennte Redner*innenlisten geführt. Diese Listen werden im Wechsel aufgerufen.}
+Berichte werden abschnittsweise beraten.
+
+{\color{red}Antragsteller*innen und Berichterstatter*innen} können außerhalb der Reihenfolge das Wort verlangen. Die Redezeit
+kann von {\color{red}der*dem} Vorsitzenden begrenzt werden. Dies kann von der Diözesankonferenz durch Mehrheitsbeschluss
+aufgehoben werden. {\color{red}Die*der} Vorsitzende kann {\color{red}Redner*nnen}, die nicht zur Sache sprechen, das
+Wort entziehen. Gegen Maßnahmen {\color{red}der*des} Vorsitzenden ist Widerspruch möglich. Über den Widerspruch
+entscheidet die Diözesankonferenz.
+
+\subsection*{§14 Wortmeldungen zur Geschäftsordnung}
+Zu Anträgen oder Äußerungen zur Geschäftsordnung kann jederzeit das Wort verlangt werden.
+Durch Anträge zur Geschäftsordnung wird die {\color{red}Redner*innenliste} unterbrochen. Die Anträge sind sofort zu
+behandeln. Anträge und Äußerungen zur Geschäftsordnung dürfen sich nur mit dem Gang der Verhandlungen
+befassen; das sind:
+
+\begin{itemize}
+  \item Antrag auf Schluss der Debatte und sofortige Abstimmung
+  \item Antrag auf Schluss der {\color{red}Redner*innenliste}
+  \item Antrag auf Beschränkung der Redezeit
+  \item Antrag auf Vertagung eines Antrages oder eines Tagesordnungspunktes
+  \item Antrag auf Unterbrechung der Sitzung
+  \item Antrag auf Nichtbefassung
+  \item Hinweis zur Geschäftsordnung
+  \item Antrag auf Überweisung an einen Ausschuss
+\end{itemize}
+
+Erhebt sich bei einem Antrag zur Geschäftsordnung kein Widerspruch, ist der Antrag angenommen; andern
+falls ist nach Anhörung {\color{red}eines*r Gegenredners*in} sofort abzustimmen.
+
+Über die Auslegung der Wortmeldungen zur Geschäftsordnung entscheidet {\color{red}die*der} Vorsitzende verbindlich.
+
+
+\subsection*{§15 Persönliche Erklärung}
+Nach Schluss der Beratung eines Tagesordnungspunktes oder nach Beendigung der Abstimmung kann {\color{red}die*der}
+Vorsitzende das Wort zu einer persönlichen Bemerkung oder Erklärung erteilen. Diese muss schriftlich bei
+{\color{red}der*dem} Protokollführenden abgegeben werden. Eine Debatte hierüber findet nicht statt.
+\subsection*{§16 Abstimmungen}
+Die Abstimmung erfolgt mit einfacher Mehrheit der anwesenden stimmberechtigten Mitglieder.
+Stimmengleichheit gilt als Ablehnungen. Enthaltungen werden nicht gezählt. Überwiegen die Enthaltungen die 
+Ja-Stimmen, so muss die Diskussion über den Beratungsgegenstand auf Antrag neu eröffnet und erneut
+abgestimmt werden.
+
+Abstimmungen über Änderungen der Satzung und der Geschäftsordnung bedürfen der
+Zwei-Drittel-Mehrheit der anwesenden stimmberechtigten Mitglieder. Abgestimmt wird mit Stimmkarten.
+Auf Antrag muss geheim abgestimmt werden.
+Liegen zu einem Beratungsgegenstand mehrere Anträge vor, so ist über den weitestgehenden zuerst abzustimmen.
+
+Unmittelbar nach einer Abstimmung kann bei begründeten Zweifeln an der Richtigkeit der Abstimmung 
+Wiederholung verlangt werden.
+
+Auf Antrag kann im Verlauf der Beratungen über Beschlüsse noch einmal abgestimmt werden.
+{\color{red}Die*der} Vorsitzende stellt das Ergebnis der Abstimmung fest und verkündet es.
+
+\subsection*{§18 Wahl der Mitglieder der Diözesanleitung}
+Zur Vorbereitung der Wahl bildet die Diözesankonferenz einen Wahlausschuss. Aufgabe des Wahlausschusses
+ist es, der Diözesankonferenz geeignete {\color{red}Kandidat*innen} für die Wahl vorzuschlagen und die Wahl zu leiten.
+Vorschlagsrecht haben alle stimmberechtigten Mitglieder der Diözesankonferenz.
+
+Die dem Wahlausschuss bekannten {\color{red}Kandidat*innen} sind den Mitgliedern der Diözesankonferenz drei Wochen
+vorher zu benennen. Der Wahl geht eine Personalbefragung und eine Personaldebatte voraus.
+
+Gewählt ist, wer im ersten Durchgang mehr als 50 Prozent der abgegebenen gültigen Stimmen auf sich 
+vereinigen kann. Wer mehr als zwei Drittel Neinstimmen erhält, ist von den folgenden Wahlgängen ausgeschlossen. 
+Im zweiten Wahlgang genügt die einfache Stimmenmehrheit. Sind mehr als 50 Prozent der abgegebenen
+gültigen Stimmen Enthaltungen, so ist {\color{red}die*der Kandidat*in} nicht gewählt.
+
+Über {\color{red}jede*n Kandidat*in} wird mit Ja, Nein oder Enthaltung abgestimmt. Es dürfen nur so viele Ja-Stimmen
+abgegeben werden, wie Ämter zu besetzen sind. Steht für ein Amt nur {\color{red}ein*e Kandidat*in} zur Verfügung, so ist für
+die Wahl die absolute Mehrheit der abgegebenen gültigen Stimmen der Anwesenden erforderlich.
+
+\chapter*{Geschäftsordnung der Mitgliederversammlung}
+\addcontentsline{toc}{chapter}{Geschäftsordnung der Mitgliederversammlung}
+
+\subsection*{§11 Beratungen}
+Das Wort wird durch die*den Vorsitzende*n in der Reihenfolge des Eingangs der Wortmeldungen erteilt.
+{\color{red} Es werden geschlechtergetrennte Redner*innenlisten geführt. Diese Listen werden im Wechsel aufgerufen.} Berichte werden
+abschnittsweise beraten. Antragstellende und Berichterstattende können außerhalb der Reihenfolge das
+Wort verlangen. Die Redezeit kann von der*dem Vorsitzenden begrenzt werden. Dies kann von der 
+Mitgliederversammlung durch Mehrheitsbeschluss aufgehoben werden. Der*die Vorsitzende kann Redenden, die
+nicht zur Sache sprechen, das Wort entziehen. Gegen Maßnahmen des*der Vorsitzenden ist Widerspruch
+möglich. Über den Widerspruch entscheidet die Mitgliederversammlung.
+\subsection*{§12 Wortmeldungen zur Geschäftsordnung}
+Zu Anträgen oder Hinweise zur Geschäftsordnung kann jederzeit das Wort verlangt werden. Durch Anträge
+zur Geschäftsordnung wird die {\color{red}Redner*innenliste} unterbrochen. Die Anträge sind sofort zu behandeln. Anträge und
+Hinweise zur Geschäftsordnung dürfen sich nur mit dem Verlauf der Beratungen befassen; das sind:
+
+\begin{itemize}
+  \item Antrag auf Schluss der Debatte und sofortige Abstimmung
+  \item Antrag auf Schluss der {\color{red}Redner*innenliste}
+  \item Antrag auf Beschränkung der Redezeit
+  \item Antrag auf Vertagung eines Antrages oder eines Tagesordnungspunktes
+  \item Antrag auf Unterbrechung der Sitzung
+  \item Antrag auf Nichtbefassung
+  \item Hinweis zur Geschäftsordnung
+  \item Antrag auf Überweisung an einen Ausschuss
+\end{itemize}
+
+\chapter*{Begründung}
+Auf der Bundeskonferenz der KjG 2019 wurde eine geschlechtergerechte Satzung des Bundesverbandes beschlossen, sowie alle anderen KjG Ebenen beauftragt ihre Satzungen ebenfalls geschlechtergerecht zu gestalten. Dies beinhaltet vor allem die Erweiterung der KjG typischen Parität auf das dritte Geschlecht.
+Eine ausführliche Begründung und genauere Aufschlüsselung der Vorgaben und Vorschläge für die Diözesan- und Pfarreiebene kann sowohl in den Anträgen SAE1 2019 und GOAE 2019
+\footnote{\url{https://kjg.de/die-kjg/bundesverband/bundeskonferenz/buko19/}} und, deutlich schöner zu lesen, im Erklärblatt der Bundesebene \footnote{\url{https://kjg.de/fileadmin/user_upload/kjgfolder/was_wir_tun/geschlechterdemokratie/Geschlechtervielfalt/Erklaerblatt_Satzungsanpassung_Geschlechtervielfalt.pdf}} gefunden werden. Wir als Satzungsausschuss haben anhand dieser Unterlagen unsere Diözesansatzung überarbeitet und schlagen die hier genannten Änderungen vor. Wir haben bei unserer Arbeit versucht alle Vorteile und Neuerungen möglichst verständlich einzubinden. Wir haben die meisten Gremien um ein diverses Mitglied erweitert und die Größe der Delegationen gleich gelassen. Die einzelnen Anpassungen und unsere Entscheidungen dazu stellen wir mündlich vor. Für Fragen stehen wir euch natürlich auch gerne schon vor der Diko zur Verfügung.
+
+
+% Ende des Dokumentes
+\end{flushleft}
+\end{document}
