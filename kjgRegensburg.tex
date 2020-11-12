@@ -7,7 +7,9 @@
 %------------------------------------
 %   Required Packages
 %------------------------------------
-\usepackage{xcolor}
+\usepackage[table,xcdraw]{xcolor} %table, xcdraw are needed for table colors
+\usepackage{enumitem} %needed to style tables
+\usepackage{float} %needed for positioning tables and text in correct order
 \usepackage{graphicx}
 \usepackage[pages=some]{background}
 \usepackage[utf8]{inputenc}
@@ -52,6 +54,14 @@
 }
 %--------------------------------------
 
+%--------------------------------------
+% Add a counter to number the tables for the changes
+% Source:
+% https://tex.stackexchange.com/questions/503668/increment-a-counter
+\newcounter{tablecounter}
+%Define a counter to automatically increase and display the counter
+\newcommand\showcounter{\addtocounter{tablecounter}{1}\thetablecounter}
+%--------------------------------------
 
 
 \title{Satzung KjG Regensburg}
