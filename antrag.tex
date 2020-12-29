@@ -1,0 +1,300 @@
+\documentclass[12pt]{report}
+\usepackage[a4paper, left=2cm,top=2cm]{geometry}
+
+%keine einzelnen Zeilen am Anfang/Ende:
+\widowpenalty = 10000
+\clubpenalty = 10000
+%------------------------------------
+%   Required Packages
+%------------------------------------
+\usepackage[table,xcdraw]{xcolor} %table, xcdraw are needed for table colors
+\usepackage{enumitem} %needed to style tables
+\usepackage{float} %needed for positioning tables and text in correct order
+\usepackage{graphicx}
+\usepackage[pages=some]{background}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel} % deutsche Bezeichnungen und Worttrennung… 
+\usepackage[T1]{fontenc} % Wird u.a. f\"ur das Trennen von W\"ortern  mit Umlauten genutzt.
+\usepackage{tgbonum} %schriftarten
+%------------------------------------------
+%    Farben
+%------------------------------------------
+
+\definecolor{weiß}{RGB}{255,255,255}
+\definecolor{kjggrau}{RGB}{119,120,123}
+\definecolor{kjghellgrau}{RGB}{192,192,192}
+\definecolor{kjgblau}{RGB}{54,95,145}
+\definecolor{kjgtuerkis}{RGB}{0, 181,190}
+
+%------------------------------------------
+% Start-cover als Einband 
+%------------------------------------------
+\backgroundsetup{
+ scale=1,
+ angle=0,
+ color=white,
+ placement=top,
+ opacity = 1,
+ contents= {
+  \includegraphics[width=\paperwidth, height=26.80cm]{satzung_einband.png}
+ }
+}
+
+%--------------------------------------
+% Fußnoten mehfrach referenzieren:
+% Quelle:
+% https://www.macuser.de/threads/latex-fussnote-mehrfach-referenzieren.519258/
+\newcommand{\footnoteremember}[2]{
+  \footnote{#2}
+  \newcounter{#1}
+  \setcounter{#1}{\value{footnote}}
+}
+\newcommand{\footnoterecall}[1]{%
+  \footnotemark[\value{#1}]
+}
+%--------------------------------------
+
+%--------------------------------------
+% Add a counter to number the tables for the changes
+% Source:
+% https://tex.stackexchange.com/questions/503668/increment-a-counter
+\newcounter{tablecounter}
+%Define a counter to automatically increase and display the counter
+\newcommand\showcounter{\addtocounter{tablecounter}{1}\thetablecounter}
+%--------------------------------------
+
+
+\title{Satzung KjG Regensburg}
+\author{}
+\setcounter{chapter}{-1}
+
+\begin{document}
+
+
+%alles links zentrieren und keine einrückung bei Paragraphen:
+\begin{flushleft}
+%Jetzt geht es mit Inhalt los:
+
+Die Diözesankonferenz möge beschließen folgende Blöcke durch unsere Vorschläge zu ersetzen:
+
+
+\subsubsection{Zusammensetzung der Pfarrleitung}
+
+Die Pfarrleitung ist paritätisch zu besetzen, ihr gehören mindestens an:
+Stimmberechtigt:
+\begin{itemize}
+  \item 2 Pfarrleiter
+  \item 2 Pfarrleiterinnen
+  \item 1 Geistlicher Leiter \footnoteremember{Berechtigung Geist}{
+    Das Amt der Geistlichen Leiterin und des Geistlichen Leiters kann von Personen wahrgenommenwerden,
+    die eine theologische oder religionspäd. Ausbildung abg. haben.
+  }
+  \item 1 Geistliche Leiterin \footnoterecall{Berechtigung Geist}
+\end{itemize}
+Die Aufgaben der Pfarrleitung können auch wahrgenommen werden, wenn nicht alle Stellen besetzt sind.
+Von der Verpflichtung zur Parität sind die KjG Pfarrgemeinschaften ausgenommen, in
+denen nur Mädchen und Frauen oder Jungen und Männer vertreten sind.
+
+\begin{table}[H]
+ \begin{tabular}{|l|}
+  \hline
+  \rowcolor[HTML]{FFCC67} 
+  \rule[-1ex]{0pt}{4ex} \textbf{KjG Regensburg (11/2019)}     \hspace{0.6\textwidth} \showcounter        \\ \hline
+  \rule[-1ex]{0pt}{4ex} \begin{minipage}[t]{\textwidth} 
+   Mindestens ein Mitglied der Pfarrleitung muss voll geschäftsfähig sein.
+   \rule[-1.2ex]{0pt}{0pt}
+  \end{minipage}
+  
+  \\ \hline
+  \rowcolor[HTML]{CBCEFB} 
+  \rule[-1ex]{0pt}{4ex}\textbf{Bundessatzung (10/2019) - SAEA5 Beschluss 2019} \\ \hline
+  \rule[-1ex]{0pt}{4ex}\begin{minipage}[t]{\textwidth} 
+   Mindestens ein Mitglied der Pfarrleitung muss voll geschäftsfähig sein.\\
+   Für mindestens die Hälfte der Stellen müssen beschränkt geschäftsfähige Personen (§ 106 BGB)\footnote{§106 BGB: Ein Minderjähriger, der das siebente Lebensjahr vollendet hat, ist nach Maße der §107 bis §113 in
+    der Geschäftsfähigkeit beschränkt.} zur Wahl
+   zugelassen werden.
+   \rule[-1.2ex]{0pt}{0pt}
+  \end{minipage}
+  \\ \hline
+  \rowcolor[HTML]{9AFF99} 
+  \rule[-1ex]{0pt}{4ex}
+  \begin{minipage}[t]{\textwidth}
+   \textbf{Vorschlag: Wir schlagen die Bundessatzung vor, um jüngeren Interessenten aus Pfarreien den Rücken zu stärken.\\}  
+    \end{minipage}           \\ \hline 
+  \rule[-1ex]{0pt}{4ex}\begin{minipage}[t]{\textwidth} 
+   %VERSION DER BUNDESSATZUNG
+    Mindestens ein Mitglied der Pfarrleitung muss voll geschäftsfähig sein.\\
+   Für mindestens die Hälfte der Stellen müssen beschränkt geschäftsfähige Personen (§ 106 BGB)\footnote{§106 BGB: Ein Minderjähriger, der das siebente Lebensjahr vollendet hat, ist nach Maße der §107 bis §113 in
+    der Geschäftsfähigkeit beschränkt.} zur Wahl
+   zugelassen werden.
+  \end{minipage}
+  \\ \hline
+ \end{tabular}
+\end{table}
+
+\begin{table}[H]
+ \begin{tabular}{|l|}
+  \hline
+  \rowcolor[HTML]{FFCC67} 
+  \rule[-1ex]{0pt}{4ex} \textbf{KjG Regensburg (11/2019)}     \hspace{0.6\textwidth} \showcounter        \\ \hline
+  \rule[-1ex]{0pt}{4ex} \begin{minipage}[t]{\textwidth} 
+   ---
+   \rule[-1.2ex]{0pt}{0pt}
+  \end{minipage}
+  
+  \\ \hline
+  \rowcolor[HTML]{CBCEFB} 
+  \rule[-1ex]{0pt}{4ex}\textbf{Bundessatzung (10/2019)} \\ \hline
+  \rule[-1ex]{0pt}{4ex}\begin{minipage}[t]{\textwidth} 
+   Die Pfarrleitung kann für die Kassenführung eine*n Kassierer*in berufen.
+   \rule[-1.2ex]{0pt}{0pt}
+  \end{minipage}
+  \\ \hline
+  \rowcolor[HTML]{9AFF99} 
+  \rule[-1ex]{0pt}{4ex}\begin{minipage}[t]{\textwidth}
+   \textbf{Vorschlag: Wir schlagen die Bundessatzung mit einem Zusatz vor, um klarzumachen, dass es sich um eine Aufgabendelegation handelt und damit keine Stimme in der Pfarrleitung verbunden ist.\\}  
+  \end{minipage}             \\ \hline
+  \rule[-1ex]{0pt}{4ex}\begin{minipage}[t]{\textwidth}
+   Die Pfarrleitung kann für die Kassenführung eine*n Kassierer*in berufen. Mit diesem Amt sind keine zusätzlichen Stimmrechte verbunden.\\
+  \end{minipage}
+  \\ \hline
+ \end{tabular}
+\end{table}
+
+\begin{table}[H]
+ \begin{tabular}{|l|}
+  \hline
+  \rowcolor[HTML]{FFCC67} 
+  \rule[-1ex]{0pt}{4ex} \textbf{KjG Regensburg (11/2019)}     \hspace{0.6\textwidth} \showcounter        \\ \hline
+  \rule[-1ex]{0pt}{4ex} \begin{minipage}[t]{\textwidth} 
+   Die stimmberechtigten Mitglieder der Pfarrleitung werden von der Mitgliederversammlung für
+   zwei Jahre gewählt.
+   \rule[-1.2ex]{0pt}{0pt}
+  \end{minipage}
+  
+  \\ \hline
+  \rowcolor[HTML]{CBCEFB} 
+  \rule[-1ex]{0pt}{4ex}\textbf{Bundessatzung (10/2019)} \\ \hline
+  \rule[-1ex]{0pt}{4ex}\begin{minipage}[t]{\textwidth} 
+   Die Mitglieder der Pfarrleitung werden von der Mitgliederversammlung für zwei Jahre gewählt.
+   \rule[-1.2ex]{0pt}{0pt}
+  \end{minipage}
+  \\ \hline
+  \rowcolor[HTML]{9AFF99} 
+  \rule[-1ex]{0pt}{4ex}\begin{minipage}[t]{\textwidth}
+   \textbf{Vorschlag: Wir schlagen die Bundessatzung vor, da alle Mitglieder der Pfarrleitung ein Stimmrecht besitzen.\\}  
+  \end{minipage}             \\ \hline
+  \rule[-1ex]{0pt}{4ex}\begin{minipage}[t]{\textwidth} 
+     Die Mitglieder der Pfarrleitung werden von der Mitgliederversammlung für zwei Jahre gewählt.\\
+  \end{minipage}
+  \\ \hline
+ \end{tabular}
+\end{table}
+
+\begin{table}[H]
+ \begin{tabular}{|l|}
+  \hline
+  \rowcolor[HTML]{FFCC67} 
+  \rule[-1ex]{0pt}{4ex} \textbf{KjG Regensburg (11/2019)}     \hspace{0.6\textwidth} \showcounter        \\ \hline
+  \rule[-1ex]{0pt}{4ex} \begin{minipage}[t]{\textwidth} 
+    Die stimmberechtigten Mitglieder der Pfarrleitung können ihren Rücktritt nur
+   gegenüber der Mitgliederversammlung erklären.
+   \rule[-1.2ex]{0pt}{0pt}
+  \end{minipage}
+  
+  \\ \hline
+  \rowcolor[HTML]{CBCEFB} 
+  \rule[-1ex]{0pt}{4ex}\textbf{Bundessatzung (10/2019)} \\ \hline
+  \rule[-1ex]{0pt}{4ex}\begin{minipage}[t]{\textwidth} 
+   Die Mitglieder der Pfarrleitung können ihren Rücktritt nur gegenüber der Mitgliederversammlung erklären.
+   \rule[-1.2ex]{0pt}{0pt}
+  \end{minipage}
+  \\ \hline
+  \rowcolor[HTML]{9AFF99} 
+  \rule[-1ex]{0pt}{4ex}\begin{minipage}[t]{\textwidth}
+   \textbf{Vorschlag: Wir schlagen die Bundessatzung vor, da alle Mitglieder der Pfarrleitung ein Stimmrecht besitzen.\\}  
+  \end{minipage}              \\ \hline
+  \rule[-1ex]{0pt}{4ex}\begin{minipage}[t]{\textwidth} 
+   Die Mitglieder der Pfarrleitung können ihren Rücktritt nur gegenüber der Mitgliederversammlung erklären.\\
+  \end{minipage}
+  \\ \hline
+ \end{tabular}
+\end{table}
+
+Sind alle Stellen der Pfarrleitung vakant, so dürfen deren Aufgaben von der
+Diözesanleitung übernommen werden. In diesem Fall hat die Diözesanleitung die Möglichkeit eine
+Stimme bei der Mitgliederversammlung wahrzunehmen.
+
+\subsubsection{Zusammensetzung des Diözesanauschusses}
+Stimmberechtigte Mitglieder des Diözesanausschusses sind:
+\begin{itemize}
+  \item 4 weibliche Mitglieder der Pfarrleitungen bzw. Mitglieder einer Pfarrgemeinschaft, die von der
+        Mitgliederversammlung ein Mandat erhalten haben. Von diesen sollte mindestens eine Person
+        Geistliche Leiterin sein.
+  \item 4 männliche Mitglieder der Pfarrleitungen bzw. Mitglieder einer Pfarrgemeinschaft, die von
+        der Mitgliederversammlung ein Mandat erhalten haben. Von diesen sollte mindestens eine
+        Person Geistlicher Leiter sein.
+  \item Die Mitglieder der Diözesanleitung
+\end{itemize}
+
+Beratende Mitglieder sind:
+\begin{itemize}
+  \item Die Diözesanreferent*innen
+\end{itemize}
+
+Die Aufgaben des Diözesanausschusses können auch dann wahrgenommen werden, wenn nicht
+alle Stellen besetzt sind.
+
+\begin{table}[H]
+ \begin{tabular}{|l|}
+  \hline
+  \rowcolor[HTML]{FFCC67} 
+  \rule[-1ex]{0pt}{4ex} \textbf{KjG Regensburg (11/2019)}     \hspace{0.6\textwidth} \showcounter        \\ \hline
+  \rule[-1ex]{0pt}{4ex} \begin{minipage}[t]{\textwidth} 
+    Das Mindestalter für den Diözesanausschuss liegt bei 16 Jahren. Von den stimmberechtigten Mitgliedern
+   des Diözesanausschusses, die nicht Teil der Diözesanleitung sind, muss aber mindestens
+   ein Mitglied, unabhängig des Geschlechts, voll geschäftsfähig sein.
+   \rule[-1.2ex]{0pt}{0pt}
+  \end{minipage}
+  \\ \hline
+  \rowcolor[HTML]{CBCEFB} 
+  \rule[-1ex]{0pt}{4ex}\textbf{Bundessatzung (10/2019)} \\ \hline
+  \rule[-1ex]{0pt}{4ex}\begin{minipage}[t]{\textwidth} 
+   Mitglied im Diözesanausschuss können auch Personen werden, die mindestens beschränkt geschäftsfähig (§106 BGB) sind.
+   \rule[-1.2ex]{0pt}{0pt}
+  \end{minipage}
+  \\ \hline
+  \rowcolor[HTML]{9AFF99} 
+  \rule[-1ex]{0pt}{4ex}\begin{minipage}[t]{\textwidth}
+   \textbf{Vorschlag: Wir wollen durch den Text bekräftigen, dass auch jüngere Personen in den DA können. Trotzdem ist uns wichtig, dass mindestens einer noch ü18 ist.\\}  
+  \end{minipage}              \\ \hline
+  \rule[-1ex]{0pt}{4ex}\begin{minipage}[t]{\textwidth}
+    Mitglied im Diözesanausschuss können Personen werden, die mindestens beschränkt geschäftsfähig (§106 BGB)\footnote{§106 BGB: Ein Minderjähriger, der das siebente Lebensjahr vollendet hat, ist nach Maße der §107 bis §113 in
+     der Geschäftsfähigkeit beschränkt.} sind. Von den stimmberechtigten Mitgliedern
+    des Diözesanausschusses, die nicht Teil der Diözesanleitung sind, muss aber mindestens eine Person, unabhängig des Geschlechts, voll geschäftsfähig sein.\\
+  \end{minipage}
+  \\ \hline
+ \end{tabular}
+\end{table}
+
+Gäste können von der Diözesanleitung oder dem Diözesanausschuss eingeladen werden.
+
+Die Vertretungen der Pfarrgemeinschaften werden von der Diözesankonferenz für zwei Jahre
+gewählt. Die Wahl ist persönlich; eine Vertretung im Diözesanausschuss ist nicht möglich. Mit
+dem Wegfall der Voraussetzung für den Diözesanausschuss erlischt die Mitgliedschaft im Diözesanausschuss.
+
+\chapter*{Begründung}
+
+"Wahlrecht ohne Altersgrenzen und Partizipation von Kindern und Jugendlichen
+sind seit langem Schwerpunktthemen im KjG Bundesverband. Wir sind Vorreiterin,
+wenn es um Kindermitbestimmung geht und treten innerverbandlich wie politisch selbstbewusst mit unseren Forderungen auf.
+Deshalb erachten wir es für konsequent, unsere Forderungen innerverbandlich stringent umzusetzen.
+Dazu gehört für uns auch. alle bisher existierenden Altersgrenzen, die in der Bundessatzung vorhanden sind,
+aufzuheben."
+
+So hieß es 2019, als die Bundeskonferenz die Satzungsänderungen beschlossen hat.
+Dem wollen wir folgen und stellen analog diesen Satzungsänderungsantrag.
+
+% Ende des Dokumentes
+\end{flushleft}
+\end{document}
