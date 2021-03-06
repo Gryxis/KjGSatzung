@@ -11,15 +11,16 @@ Bei Problemen an mich wenden :-)
 ## Branching
 Wenn ein Antrag erstellt werden soll, bitte einen neuen branch vom aktuellen tag erstellen und dort Änderungen vornehmen.
 
-## Antragsformat:
+## Eigene Änderungen schreiben
 
-Wenn Änderungen bestehen, bitte neu hinzugefügten Text grün und Änderungen im Text rot markieren.
-Das funktioniert für grün beispielsweise so:
-```{\color{green} mein neuer Text}```
-Für Aufzählungen folgendermaßen:
+Um eigene Änderungen vorzuschlagen, bitte von dem aktuellsten release-tag aus einen neuen branch erstellen,
+und dort die Änderungen machen.
+### Änderungen bitte rot markieren in der PDF
+Für Text: `{\color{red} mein geänderter Text}`
+Für Aufzählungen:
 ```
 \begin{itemize}
-   \item zuvor schon exisiterender Text
-   \item {\color{red} mein neuer Punkt}
+...
+  \item {\color{red} mein neuer Aufzählungspunkt}
 \end{itemize}
 ```
