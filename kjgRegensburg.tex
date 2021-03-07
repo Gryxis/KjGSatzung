@@ -7,7 +7,9 @@
 %------------------------------------
 %   Required Packages
 %------------------------------------
-\usepackage{xcolor}
+\usepackage[table,xcdraw]{xcolor} %table, xcdraw are needed for table colors
+\usepackage{enumitem} %needed to style tables
+\usepackage{float} %needed for positioning tables and text in correct order
 \usepackage{graphicx}
 \usepackage[pages=some]{background}
 \usepackage[utf8]{inputenc}
@@ -52,6 +54,14 @@
 }
 %--------------------------------------
 
+%--------------------------------------
+% Add a counter to number the tables for the changes
+% Source:
+% https://tex.stackexchange.com/questions/503668/increment-a-counter
+\newcounter{tablecounter}
+%Define a counter to automatically increase and display the counter
+\newcommand\showcounter{\addtocounter{tablecounter}{1}\thetablecounter}
+%--------------------------------------
 
 
 \title{Satzung KjG Regensburg}
@@ -269,7 +279,7 @@ Der Mitgliederversammlung sind insbesondere folgende Aufgaben vorbehalten:
   \item Entlastung der Pfarrleitung
   \item Wahl der Pfarrleitung
   \item Wahl der Kassenprüfenden
-  \item Wahl des Kindersenates (stimmberechtigt sind alle Dauermitglieder der KjG Pfarrgemeinschaft bis einschließlich 12 Jahre)
+  \item Wahl des Kindersenates
   \item Abwahl einzelner Mitglieder der Pfarrleitung
 \end{itemize}
 
@@ -343,9 +353,16 @@ Die Aufgaben der Pfarrleitung können auch wahrgenommen werden, wenn nicht alle 
  Von der Verpflichtung zur geschlechtergerechten Besetzung sind die KjG Pfarrgemeinschaften ausgenommen, in
 denen nur Personen eines Geschlechts vertreten sind.
 
-Mindestens ein Mitglied der Pfarrleitung muss voll geschäftsfähig sein.
-Die stimmberechtigten Mitglieder der Pfarrleitung werden von der Mitgliederversammlung für
-zwei Jahre gewählt. Die stimmberechtigten Mitglieder der Pfarrleitung können ihren Rücktritt nur
+Mindestens ein Mitglied der Pfarrleitung muss voll geschäftsfähig sein.\\
+Für mindestens die Hälfte der Stellen müssen beschränkt geschäftsfähige Personen (§ 106 BGB)\footnote{§106 BGB: Ein Minderjähriger, der das siebente Lebensjahr vollendet hat, ist nach Maße der §107 bis §113 in
+der Geschäftsfähigkeit beschränkt.} zur Wahl zugelassen werden.
+
+Die Pfarrleitung kann für die Kassenführung eine*n oder mehrere Kassierer*innen berufen.
+Mit dem Amt des*der Kassiers*in sind keine zusätzlichen Stimmrechte verbunden.\\
+
+Die Mitglieder der Pfarrleitung werden von der Mitgliederversammlung für
+zwei Jahre gewählt.
+Die Mitglieder der Pfarrleitung können ihren Rücktritt nur
 gegenüber der Mitgliederversammlung erklären.
 
 Sind alle Stellen der Pfarrleitung vakant, so dürfen deren Aufgaben von der
@@ -395,11 +412,11 @@ von der Pfarrleitung einberufen und geleitet.
 
 \subsection{Der Kindersenat}
 Der Kindersenat dient der Kindermitbestimmung in der Zeit zwischen den Mitgliederversammlungen.
-In den Kindersenat können Dauermitglieder der KjG Pfarrgemeinschaft bis einschließlich 12
-Jahre gewählt werden.
+In den Kindersenat können Dauermitglieder der KjG Pfarrgemeinschaft gewählt werden,
+die zum Zeitpunkt der Wahl unter 13 Jahre alt sind.
 
-Die stimmberechtigten Mitglieder des Kindersenats werden auf der Mitgliederversammlung von
-den bis einschließlich 12 Jahre alten Dauermitgliedern für die Dauer von einem Jahr gewählt.
+Die Mitglieder des Kindersenats werden auf der Mitgliederversammlung von den unter 13 Jahre alten
+Dauermitgliedern für die Dauer von einem Jahr gewählt.
 
 \subsubsection{Aufgaben des Kindersenates}
 Zu den Aufgaben des Kindersenats gehören:
@@ -411,7 +428,7 @@ Zu den Aufgaben des Kindersenats gehören:
 \subsubsection{Zusammensetzung und Einberufung des Kindersenats}
 
 Der Kindersenat ist geschlechtergerecht zu besetzen, ihm gehören mindestens an:
-Stimmberechtigt:
+
 \begin{itemize}
   \item 2 männliche Kinder
   \item 2 weibliche Kinder
@@ -527,7 +544,7 @@ Der Satzungszweck wird verwirklicht insbesondere durch:
       \item zur ständigen Wertorientierung und Wertschätzung innerhalb der Gruppierung und der Kirche
       \item zur Standortüberprüfung und Entwicklung von Lebensperspektiven in Einheit mit einem 
             selbstverantworteten religiösen Lebens
-      \item zur Ermutigung soziale, politische und pädagogische Verantwortung zu übernehmen und 	
+      \item zur Ermutigung soziale, politische und pädagogische Verantwortung zu übernehmen und  
             persönliche Interessen und Fähigkeiten zu entwickeln
       \item zur Schaffung von Impulsen und Möglichkeiten zur Entwicklung eines demokratischen Zusammenwirkens
             und Handelns in Einheit mit der Gesamtkirche und in Übereinstimmung 
@@ -555,7 +572,7 @@ trifft im Rahmen der Grundlagen und Ziele, sowie der Satzung des Bundesverbandes
 Beschlüsse der Bundeskonferenz die grundlegenden Entscheidungen über die Arbeit des Diözesanverbandes.
 \subsubsection{Aufgaben der Diözesankonferenz}
 Der Diözesankonferenz sind insbesondere folgende Aufgaben vorbehalten:
-\begin{itemize}	
+\begin{itemize} 
   \item Beschlussfassung über:
     \begin{itemize} 
       \item die Diözesansatzung
@@ -675,9 +692,10 @@ Beratende Mitglieder sind:
 Die Aufgaben des Diözesanausschusses können auch dann wahrgenommen werden, wenn nicht
 alle Stellen besetzt sind.
 
-Das Mindestalter für den Diözesanausschuss liegt bei 16 Jahren. Von den stimmberechtigten Mitgliedern
-des Diözesanausschusses, die nicht Teil der Diözesanleitung sind, muss aber mindestens
-ein Mitglied, unabhängig des Geschlechts, voll geschäftsfähig sein.
+Mitglied im Diözesanausschuss können Personen werden, die mindestens beschränkt geschäftsfähig (§106 BGB)\footnote{§106 BGB: Ein Minderjähriger, der das siebente Lebensjahr vollendet hat, ist nach Maße der §107 bis §113 in
+der Geschäftsfähigkeit beschränkt.} sind.
+Von den stimmberechtigten Mitgliedern des Diözesanausschusses, die nicht Teil der Diözesanleitung sind,
+muss aber mindestens eine Person, unabhängig des Geschlechts, voll geschäftsfähig sein.
 
 Gäste können von der Diözesanleitung oder dem Diözesanausschuss eingeladen werden.
 
@@ -810,8 +828,8 @@ Unterlagen und zwar:
 \begin{itemize}
   \item die vorläufige Tagesordnung
   \item die Anträge mit Begründung
-  \item die Berichte der Diözesanleitung	
-  \item die Berichte des Diözesanausschusses	
+  \item die Berichte der Diözesanleitung 
+  \item die Berichte des Diözesanausschusses 
   \item die Berichte der diözesanen Teams
 \end{itemize}
 
@@ -1074,18 +1092,18 @@ die Bundesleitung der KjG in Kraft.
 \addcontentsline{toc}{chapter}{Vorgehensweise bei Verdacht auf sexualisierte Gewalt}
 \subsection*{ 0.}
 Grundsätzlich wird der Kreis der mit dem Verdachtsfall betrauten Personen so klein wie möglich gehalten.
-Aus Gründen des Opfer- und Täterschutzes werden Informationen und insbesondere Namen 	
+Aus Gründen des Opfer- und Täterschutzes werden Informationen und insbesondere Namen  
 streng vertraulich behandelt.
 \subsection*{1.}
 Besteht der Verdacht, dass ein Mitglied sexualisierter Gewalt ausgesetzt ist, holen sich ehrenamtliche
-Mitarbeiter*innen Unterstützung bei der Diözesanleitung, den Bildungsreferent*innen oder bei 	
+Mitarbeiter*innen Unterstützung bei der Diözesanleitung, den Bildungsreferent*innen oder bei  
 ausgewiesenen Fachberatungsstellen.
 \subsection*{2.}
 Besteht eine begründete Vermutung, dass ein Mitglied sexualisierte Gewalt auf andere ausübt, müssen
 umgehend die Diözesanleitung oder die Bildungsreferent*innen informiert werden. Die Diözesanleitung
 und die Bildungsreferent*innen klären das weitere Vorgehen mit professioneller Unterstützung.
 \subsection*{3.}
-„Im begründeten Verdachtsfall sind Hauptberufliche und Ehrenamtliche Mitarbeitende sofort von 	
+„Im begründeten Verdachtsfall sind Hauptberufliche und Ehrenamtliche Mitarbeitende sofort von  
 deren Tätigkeit zu entbinden.“
 (Prävention sexueller Gewalt in der KjG, Grundsatzinformationen für Pfarreien der LAG Bayern)
 \subsection*{4.}
