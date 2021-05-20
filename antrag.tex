@@ -1,0 +1,111 @@
+\documentclass[12pt]{report}
+\usepackage[a4paper, left=2cm,top=2cm]{geometry}
+
+%keine einzelnen Zeilen am Anfang/Ende:
+\widowpenalty = 10000
+\clubpenalty = 10000
+%------------------------------------
+%   Required Packages
+%------------------------------------
+\usepackage[table,xcdraw]{xcolor} %table, xcdraw are needed for table colors
+\usepackage{enumitem} %needed to style tables
+\usepackage{float} %needed for positioning tables and text in correct order
+\usepackage{graphicx}
+\usepackage[pages=some]{background}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel} % deutsche Bezeichnungen und Worttrennung… 
+\usepackage[T1]{fontenc} % Wird u.a. f\"ur das Trennen von W\"ortern  mit Umlauten genutzt.
+\usepackage{tgbonum} %schriftarten
+%------------------------------------------
+%    Farben
+%------------------------------------------
+
+\definecolor{weiß}{RGB}{255,255,255}
+\definecolor{kjggrau}{RGB}{119,120,123}
+\definecolor{kjghellgrau}{RGB}{192,192,192}
+\definecolor{kjgblau}{RGB}{54,95,145}
+\definecolor{kjgtuerkis}{RGB}{0, 181,190}
+
+%------------------------------------------
+% Start-cover als Einband 
+%------------------------------------------
+\backgroundsetup{
+ scale=1,
+ angle=0,
+ color=white,
+ placement=top,
+ opacity = 1,
+ contents= {
+  \includegraphics[width=\paperwidth, height=26.80cm]{satzung_einband.png}
+ }
+}
+
+%--------------------------------------
+% Fußnoten mehfrach referenzieren:
+% Quelle:
+% https://www.macuser.de/threads/latex-fussnote-mehrfach-referenzieren.519258/
+\newcommand{\footnoteremember}[2]{
+  \footnote{#2}
+  \newcounter{#1}
+  \setcounter{#1}{\value{footnote}}
+}
+\newcommand{\footnoterecall}[1]{%
+  \footnotemark[\value{#1}]
+}
+%--------------------------------------
+
+%--------------------------------------
+% Add a counter to number the tables for the changes
+% Source:
+% https://tex.stackexchange.com/questions/503668/increment-a-counter
+\newcounter{tablecounter}
+%Define a counter to automatically increase and display the counter
+\newcommand\showcounter{\addtocounter{tablecounter}{1}\thetablecounter}
+%--------------------------------------
+
+
+\title{Satzung KjG Regensburg}
+\author{}
+\setcounter{chapter}{-1}
+
+\begin{document}
+
+%alles links zentrieren und keine einrückung bei Paragraphen:
+\begin{flushleft}
+%Jetzt geht es mit Inhalt los:
+
+Die Diözeanskonferenz möge beschließen folgende Änderungen in die Satzung zu übernehmen:
+
+\subsubsection{Zusammensetzung der Diözesankonferenz}
+Stimmberechtigte Mitglieder der Diözesankonferenz sind:
+\begin{itemize}
+  \item 2 Delegierte pro KjG Pfarrgemeinschaft
+  \item Die Mitglieder der Diözesanleitung
+\end{itemize}
+
+Die Delegation ist folgendermaßen zu besetzen:
+\begin{itemize}
+  \item{ 2 Mitglieder der Pfarrleitung bzw. von Pfarrleitung oder Mitgliederversammlung
+        Delegierte unterschiedlichen Geschlechts}
+\end{itemize}
+
+Von der Verpflichtung zur geschlechtergerechten Besetzung sind die KjG Pfarrgemeinschaften ausgenommen,
+in denen nur Personen eines Geschlechts vertreten sind.
+
+{\color{green}Hat eine KjG Pfarrgemeinschaft bis drei Wochen vor der Diözesankonferenz nicht die
+Mitgliedsbeiträge des Vorjahres an die Diözesanstelle bezahlt, so ruht ihr Stimmrecht.
+
+Sollte die Diözesankonferenz in der zweiten Hälfte des Jahres stattfinden,
+so müssen zusätzlich zum selben Zeitpunkt mindestens 35 Prozent der Mitgliedsbeiträge des aktuellen Jahres an die Diözesanstelle
+ gezahlt sein, sonst ruht ebenso ihr Stimmrecht.
+
+Wenn das Stimmrecht einer KjG Pfarrgemeinschaft ruht, so bedeutet das, dass die von ihr Delegierten
+nicht stimmberechtigt sind. Diese gelten im Sinne der Satzung als beratende Mitglieder.
+\bigskip}
+
+\chapter*{Begründung}
+ToDo
+
+% Ende des Dokumentes
+\end{flushleft}
+\end{document}
