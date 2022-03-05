@@ -16,6 +16,7 @@
 \usepackage[english,ngerman]{babel} % deutsche Bezeichnungen und Worttrennung… 
 \usepackage[T1]{fontenc} % Wird u.a. f\"ur das Trennen von W\"ortern  mit Umlauten genutzt.
 \usepackage{tgbonum} %schriftarten
+\usepackage{ragged2e}
 %------------------------------------------
 %    Farben
 %------------------------------------------
@@ -25,7 +26,10 @@
 \definecolor{kjghellgrau}{RGB}{192,192,192}
 \definecolor{kjgblau}{RGB}{54,95,145}
 \definecolor{kjgtuerkis}{RGB}{0, 181,190}
-
+%------------------------------------------
+% Schriftart
+%------------------------------------------
+\renewcommand{\familydefault}{\sfdefault}
 %------------------------------------------
 % Start-cover als Einband 
 %------------------------------------------
@@ -106,8 +110,8 @@
   \setcounter{page}{1}
 
 
-%alles links zentrieren und keine einrückung bei Paragraphen:
-\begin{flushleft}
+%alles in blocksatz und keine einrückung bei Paragraphen:
+\begin{justify}
 %Jetzt geht es mit Inhalt los:
 
 \chapter{Grundlagen und Ziele der Katholischen jungen Gemeinde}
@@ -1120,5 +1124,5 @@ Der Verbandsausschluss ist als letzte Maßnahme anzusehen, die ergriffen werden 
 \includegraphics[width=\paperwidth, height=\paperheight]{kjgsatzungende.png}
 \restoregeometry
 % Ende des Dokumentes
-\end{flushleft}
+\end{justify}
 \end{document}
