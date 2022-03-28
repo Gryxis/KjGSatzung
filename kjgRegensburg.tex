@@ -17,7 +17,7 @@
 \usepackage[T1]{fontenc} % Wird u.a. f\"ur das Trennen von W\"ortern  mit Umlauten genutzt.
 \usepackage{tgbonum} %schriftarten
 \usepackage{ragged2e}
-\usepackage[hidelinks]{hyperref}
+\usepackage[hidelinks]{hyperref} %Hyperref für navigation
 %------------------------------------------
 %    Farben
 %------------------------------------------
@@ -68,8 +68,13 @@
 %Define a counter to automatically increase and display the counter
 \newcommand\showcounter{\addtocounter{tablecounter}{1}\thetablecounter}
 %--------------------------------------
+% Verstecke manche Sachen vor dem Inhaltsverzeichnis
+%--------------------------------------
 
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
 
+%--------------------------------------
 \title{Satzung KjG Regensburg}
 \author{}
 \setcounter{chapter}{-1}
@@ -515,11 +520,11 @@ deren Vertretung in Kirche und Gesellschaft.
 
 \section{Gemeinnützigkeit}
 
-\subsection{}
+\tocless\subsection{}
 Der KjG Diözesanverband Regensburg verfolgt ausschließlich und unmittelbar gemeinnützige
 und kirchliche Zwecke im Sinne des Abschnitts ,,Steuerbegünstigte Zwecke`` der Abgabenordnung.
 
-\subsection{}
+\tocless\subsection{}
 \label{sec:Zweck}
 Zweck des KjG Diözesanverbandes Regensburg ist die
 Förderung der Religion \footnote{§52 Abs. 2 S.1 Nr.2 AO},
@@ -530,7 +535,7 @@ Völkerverständigungsgedankens \footnote{§52 Abs. 2 S.1 Nr. 13 AO}, des bürge
 gemeinnütziger und kirchlicher Zwecke\footnote{§ 52 Abs 2 S. 1 Nr.25 AO}
 sowie die Verfolgung kirchlicher Zwecke \footnote{§54 AO}
 
-\subsection{}
+\tocless\subsection{}
 Der Satzungszweck wird verwirklicht insbesondere durch:
 \begin{itemize}
   \item die Wahrnehmung kirchlicher Kinder- und Jugendarbeit insbesondere in der Diözese Regensburg
@@ -558,15 +563,15 @@ Der Satzungszweck wird verwirklicht insbesondere durch:
             mit den Grundrechten in einer globalisierten Welt.
     \end{itemize}
 \end{itemize}
-\subsection{}
+\tocless\subsection{}
 Der KjG Diözesanverband Regensburg darf seinen Satzungszweck auch durch Hilfspersonen \footnote{§57 Abs. 1 S. 2 AO}
 verwirklichen.
-\subsection{}
+\tocless\subsection{}
 Der KjG Diözesanverband Regensburg ist selbstlos tätig; er verfolgt nicht in erster Linie eigenwirtschaftliche Zwecke.
-\subsection{}
+\tocless\subsection{}
 Mittel des KjG Diözesanverbandes Regensburg dürfen nur für die satzungsmäßigen Zwecke
 verwendet werden. Die Mitglieder erhalten keine Zuwendungen aus Mitteln der Körperschaft.
-\subsection{}
+\tocless\subsection{}
 Es darf keine Person durch Ausgaben, die dem Zweck des KjG Diözesanverbandes Regensburg
 fremd sind, oder durch unverhältnismäßig hohe Vergütungen begünstigt werden.
 \section{Die Organe des Diözesanverbandes}
