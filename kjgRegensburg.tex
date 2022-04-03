@@ -16,6 +16,8 @@
 \usepackage[english,ngerman]{babel} % deutsche Bezeichnungen und Worttrennung… 
 \usepackage[T1]{fontenc} % Wird u.a. f\"ur das Trennen von W\"ortern  mit Umlauten genutzt.
 \usepackage{tgbonum} %schriftarten
+\usepackage{ragged2e}
+\usepackage[hidelinks]{hyperref} %Hyperref für navigation
 %------------------------------------------
 %    Farben
 %------------------------------------------
@@ -25,7 +27,11 @@
 \definecolor{kjghellgrau}{RGB}{192,192,192}
 \definecolor{kjgblau}{RGB}{54,95,145}
 \definecolor{kjgtuerkis}{RGB}{0, 181,190}
-
+%------------------------------------------
+% Schriftart und Indent
+%------------------------------------------
+\renewcommand{\familydefault}{\sfdefault}
+\setlength\parindent{0pt}
 %------------------------------------------
 % Start-cover als Einband 
 %------------------------------------------
@@ -62,8 +68,13 @@
 %Define a counter to automatically increase and display the counter
 \newcommand\showcounter{\addtocounter{tablecounter}{1}\thetablecounter}
 %--------------------------------------
+% Verstecke manche Sachen vor dem Inhaltsverzeichnis
+%--------------------------------------
 
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
 
+%--------------------------------------
 \title{Satzung KjG Regensburg}
 \author{}
 \setcounter{chapter}{-1}
@@ -106,8 +117,9 @@
   \setcounter{page}{1}
 
 
-%alles links zentrieren und keine einrückung bei Paragraphen:
-\begin{flushleft}
+%alles in blocksatz und keine einrückung bei Paragraphen:
+\begin{justify}
+\setlength\parindent{0pt}
 %Jetzt geht es mit Inhalt los:
 
 \chapter{Grundlagen und Ziele der Katholischen jungen Gemeinde}
@@ -508,11 +520,11 @@ deren Vertretung in Kirche und Gesellschaft.
 
 \section{Gemeinnützigkeit}
 
-\subsection{}
+\tocless\subsection{}
 Der KjG Diözesanverband Regensburg verfolgt ausschließlich und unmittelbar gemeinnützige
 und kirchliche Zwecke im Sinne des Abschnitts ,,Steuerbegünstigte Zwecke`` der Abgabenordnung.
 
-\subsection{}
+\tocless\subsection{}
 \label{sec:Zweck}
 Zweck des KjG Diözesanverbandes Regensburg ist die
 Förderung der Religion \footnote{§52 Abs. 2 S.1 Nr.2 AO},
@@ -523,7 +535,7 @@ Völkerverständigungsgedankens \footnote{§52 Abs. 2 S.1 Nr. 13 AO}, des bürge
 gemeinnütziger und kirchlicher Zwecke\footnote{§ 52 Abs 2 S. 1 Nr.25 AO}
 sowie die Verfolgung kirchlicher Zwecke \footnote{§54 AO}
 
-\subsection{}
+\tocless\subsection{}
 Der Satzungszweck wird verwirklicht insbesondere durch:
 \begin{itemize}
   \item die Wahrnehmung kirchlicher Kinder- und Jugendarbeit insbesondere in der Diözese Regensburg
@@ -551,15 +563,15 @@ Der Satzungszweck wird verwirklicht insbesondere durch:
             mit den Grundrechten in einer globalisierten Welt.
     \end{itemize}
 \end{itemize}
-\subsection{}
+\tocless\subsection{}
 Der KjG Diözesanverband Regensburg darf seinen Satzungszweck auch durch Hilfspersonen \footnote{§57 Abs. 1 S. 2 AO}
 verwirklichen.
-\subsection{}
+\tocless\subsection{}
 Der KjG Diözesanverband Regensburg ist selbstlos tätig; er verfolgt nicht in erster Linie eigenwirtschaftliche Zwecke.
-\subsection{}
+\tocless\subsection{}
 Mittel des KjG Diözesanverbandes Regensburg dürfen nur für die satzungsmäßigen Zwecke
 verwendet werden. Die Mitglieder erhalten keine Zuwendungen aus Mitteln der Körperschaft.
-\subsection{}
+\tocless\subsection{}
 Es darf keine Person durch Ausgaben, die dem Zweck des KjG Diözesanverbandes Regensburg
 fremd sind, oder durch unverhältnismäßig hohe Vergütungen begünstigt werden.
 \section{Die Organe des Diözesanverbandes}
@@ -654,7 +666,7 @@ Der Ablauf der Diözesankonferenz regelt sich nach der Geschäftsordnung.
 \subsubsection{Änderung der Satzung des Diözesanverbandes}
 Änderungen der Diözesansatzung können nur beschlossen werden, wenn zwei Drittel der anwesenden
 stimmberechtigten Mitglieder zustimmen und der Änderungsantrag den Mitgliedern der
-Diözesankonferenz mindestens vier Wochen vorher schriftlich mitgeteilt worden ist.
+Diözesankonferenz mindestens drei Wochen vorher schriftlich mitgeteilt worden ist.
 
 \subsection{Der Diözesanausschuss}
 Der Diözesanausschuss berät im Rahmen der Grundlagen und Ziele und der Beschlüsse der Diözesankonferenz
@@ -674,15 +686,19 @@ Dem Diözesanausschuss sind insbesondere folgende Aufgaben vorbehalten:
 Stimmberechtigte Mitglieder des Diözesanausschusses sind:
 \begin{itemize}
   \item 4 weibliche Mitglieder der Pfarrleitungen bzw. Mitglieder einer Pfarrgemeinschaft, die von der
-        Mitgliederversammlung ein Mandat erhalten haben. Von diesen sollte mindestens eine Person
-        Geistliche Leiterin sein.
+        Mitgliederversammlung ein Mandat erhalten haben.
   \item 4 männliche Mitglieder der Pfarrleitungen bzw. Mitglieder einer Pfarrgemeinschaft, die von
-        der Mitgliederversammlung ein Mandat erhalten haben. Von diesen sollte mindestens eine
-        Person Geistlicher Leiter sein.
-  \item 1 diverses Mitglied der Pfarrleitungen bzw. Mitglieder einer Pfarrgemeinschaft, die von
         der Mitgliederversammlung ein Mandat erhalten haben.
+  \item 1 diverses Mitglied der Pfarrleitungen bzw. Mitglied einer
+  Pfarrgemeinschaft, das von der Mitgliederversammlung ein Mandat erhalten
+  hat.
   \item Die Mitglieder der Diözesanleitung
 \end{itemize}
+
+Von den Personen, die nicht zur Diözesanleitung gehören, sind bis zu zwei Personen unterschiedlichen Geschlechts Geistliche Leitung.\footnote{Das Amt der Geistlichen Leitung kann von Personen wahrgenommen werden, die
+	eine theologische oder religionspädagogische Ausbildung abgeschlossen haben.
+	Eine männliche Geistliche Leitung kann in Absprache mit dem bischöflichen Stuhl
+	nur von ordinierten, katholischen Priestern wahrgenommen werden.}\\
 
 Beratende Mitglieder sind:
 \begin{itemize}
@@ -727,21 +743,15 @@ Referent*innen, Sachbearbeitende sowie Mitarbeitende berufen.
 \subsubsection{Zusammensetzung der Diözesanleitung}
 Zur Diözesanleitung gehören:
 \begin{itemize}
-  {\item 3 weibliche Mitglieder}, wovon eine Geistliche Leiterin 
-       \footnote{
-           Das Amt der Geistlichen Leiterin kann von Frauen wahrgenommen werden, die eine theologische
-           oder religionspädagogische Ausbildung abgeschlossen haben.
-       }
-       ist
-  {\item 3 männliche Mitglieder}, wovon einer Geistlicher Leiter
-        \footnote{
-            Das Amt des Geistlichen Leiters kann von Männern wahrgenommen werden, die eine theologische
-            oder religionspädagogische Ausbildung abgeschlossen haben. Derzeit kann dieses Amt in Absprache
-            mit dem bischöflichen Stuhl nur von ordinierten, katholischen Priestern wahrgenommen werden.	
-        }
-        ist
-    {\item 1 diverses Mitglied}
+	\item 3 weibliche Mitglieder,
+	\item 3 männliche Mitglieder,
+	1 diverses Mitglied.
 \end{itemize}
+
+Von diesen Personen sind bis zu zwei Personen unterschiedlichen Geschlechts Geistliche Leitung.\footnote{Das Amt der Geistlichen Leitung kann von Personen wahrgenommen werden, die
+	eine theologische oder religionspädagogische Ausbildung abgeschlossen haben.
+	Eine männliche Geistliche Leitung kann in Absprache mit dem bischöflichen Stuhl
+	nur von ordinierten, katholischen Priestern wahrgenommen werden.}
 
 Die Aufgaben der Diözesanleitung können auch dann wahrgenommen werden, wenn nicht alle
 Ämter besetzt sind. Mindestens ein Mitglied der Diözesanleitung muss voll geschäftsfähig sein.
@@ -907,7 +917,7 @@ Die*der Vorsitzende stellt das Ergebnis der Abstimmung fest und verkündet es.
 
 \subsection*{§17 Wahlen}
 Wahlen werden grundsätzlich in geheimer Abstimmung durchgeführt. Auf Antrag kann Abstimmung mit
-Stimmkarten erfolgen, wenn sich kein Widerspruch ergibt.
+Stimmkarten und/oder en bloc erfolgen, wenn sich kein Widerspruch ergibt.
 
 Gewählt wird mit einfacher Mehrheit. Bei Stimmengleichheit erfolgt Stichwahl.
 
@@ -1120,5 +1130,5 @@ Der Verbandsausschluss ist als letzte Maßnahme anzusehen, die ergriffen werden 
 \includegraphics[width=\paperwidth, height=\paperheight]{kjgsatzungende.png}
 \restoregeometry
 % Ende des Dokumentes
-\end{flushleft}
+\end{justify}
 \end{document}
