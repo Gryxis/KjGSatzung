@@ -3,3 +3,5 @@
 *.swp
 *.toc
 *.aux
+*.out
+*.gz
