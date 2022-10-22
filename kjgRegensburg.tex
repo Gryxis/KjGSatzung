@@ -18,6 +18,7 @@
 \usepackage{tgbonum} %schriftarten
 \usepackage{ragged2e}
 \usepackage[hidelinks]{hyperref} %Hyperref für navigation
+\usepackage[normalem]{ulem} % Fuer Strikeout command zum bearbeiten
 %------------------------------------------
 %    Farben
 %------------------------------------------
@@ -59,6 +60,12 @@
   \footnotemark[\value{#1}]
 }
 %--------------------------------------
+
+%--------------------------------------
+% Commands zum Bearbeiten
+
+\newcommand{\deleted}[1]{{\color{red}\sout{#1}}}
+\newcommand{\added}[1]{{\color{green} #1}}
 
 %--------------------------------------
 % Add a counter to number the tables for the changes
