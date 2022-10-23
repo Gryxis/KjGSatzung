@@ -33,6 +33,7 @@
 %------------------------------------------
 \renewcommand{\familydefault}{\sfdefault}
 \setlength\parindent{0pt}
+
 %------------------------------------------
 % Start-cover als Einband 
 %------------------------------------------
@@ -66,7 +67,8 @@
 
 \newcommand{\deleted}[1]{{\color{red}\sout{#1}}}
 \newcommand{\added}[1]{{\color{kjgtuerkis} #1}}
-
+\newcommand{\diff}[1]{{\color{orange} #1}}
+\newcommand{\todo}[1]{{\color{green} #1}}
 %--------------------------------------
 % Add a counter to number the tables for the changes
 % Source:
@@ -130,16 +132,17 @@
   \setcounter{page}{1}
 
 
-%alles in blocksatz und keine einrückung bei Paragraphen:
+%alles in blocksatz und keine einrückung bei Paragraphen aber mit Platz dazwischen:
 \begin{justify}
 \setlength\parindent{0pt}
+\setlength{\parskip}{\baselineskip}
 %Jetzt geht es mit Inhalt los:
 
 \chapter{Grundlagen und Ziele der Katholischen jungen Gemeinde}
 In der Katholischen jungen Gemeinde (KjG) schließen sich junge Christ*innen zusammen. 
 Mitglied der KjG kann jede*r werden, der*die die Grundlagen und Ziele des Verbandes bejaht.
-Demokratisch und gleichberechtigt wählen alle Mitglieder altersunabhängig die Leitungen und
-entscheiden über die Inhalte und Arbeitsformen des Verbandes.
+\diff{Demokratisch und gleichberechtigt wählen alle Mitglieder altersunabhängig die Leitungen und
+entscheiden über die Inhalte und Arbeitsformen des Verbandes.}
 Ihre jeweiligen Bedürfnisse und Interessen bestimmen das verbandliche Leben. Die Gruppen,
 Projekte und offenen Angebote der KjG bieten Raum für Begegnungen und Beziehungen,
 gemeinsame Erlebnisse und gemeinsames Handeln. In ihnen erfahren Kinder, Jugendliche und junge
@@ -166,8 +169,8 @@ Gesellschaft und Kirche. Sie wendet sich gegen jede Art von Ausgrenzung und Unte
 Menschen und gegen die Zerstörung der natürlichen Lebensgrundlagen.
 
 Die KjG setzt sich ein für eine Politik, die sich orientiert an der weltweiten Verwirklichung gleicher
-und gerechter Lebensbedingungen für alle Mädchen und Jungen, Frauen und Männer und an einer
-ökologisch verantworteten Lebensweise.
+und gerechter Lebensbedingungen für \todo{alle Mädchen und Jungen, Frauen und Männer und an einer
+ökologisch verantworteten Lebensweise.}
 
 In diesem Anliegen erklären sich die Mitglieder der KjG solidarisch mit anderen Kindern, Jugendlichen und jungen Erwachsenen.
 Sie suchen sowohl im eigenen Land als auch über Ländergrenzen
@@ -179,8 +182,7 @@ So versteht sich die KjG als Kirche in der Lebenswelt von Kindern, Jugendlichen 
 Eine Ortsgruppe ist wie eine Pfarrgemeinschaft zu behandeln, jedoch ist sie nicht an eine Pfarrei
 gebunden. Im Folgenden wurde auf die explizite Nennung der Ortsgruppe verzichtet.
 \section{Mitglieder}
-Mitglied in der KjG kann jede*r werden, die*der die Grundlagen und Ziele des Verbandes bejaht.
-Die*der Einzelne wird Mitglied der KjG Pfarrgemeinschaft, indem sie*er das erklärt und die Pfarrleitung diese Erklärung annimmt.
+Mitglied in der KjG kann jede*r werden, die*der die Grundlagen und Ziele des Verbandes bejaht. Die*der Einzelne wird Mitglied der KjG Pfarrgemeinschaft, indem sie*er das erklärt und die Pfarrleitung diese Erklärung annimmt.
 Das Mitglied ist grundsätzlich verpflichtet, den Mitgliedsbeitrag fristgerecht zu bezahlen.
 Die Höhe des jeweiligen Mitgliedsbeitrags wird von der jeweiligen
 Ebene festgelegt und erhoben.
