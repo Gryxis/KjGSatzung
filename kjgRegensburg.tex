@@ -82,6 +82,12 @@
 \newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
 
 %--------------------------------------
+
+%--------------------------------------
+% Verstecke die Kapitelnamen
+\usepackage{titlesec}
+\titleformat{\chapter}{\bfseries\Large}{\thechapter}{1.5ex}{}
+%--------------------------------------
 \title{Satzung KjG Regensburg}
 \author{}
 \setcounter{chapter}{-1}
@@ -94,7 +100,7 @@
     \BgThispage
     \vspace*{\fill}
     \begin{Huge}
-      { \color{kjgtuerkis}  Stand April 2020}
+      { \color{kjgtuerkis}  Stand März 2022}
     \end{Huge}
     \vspace*{\fill}
     \newpage
