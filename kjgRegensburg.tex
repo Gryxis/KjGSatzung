@@ -66,9 +66,9 @@
 % Commands zum Bearbeiten
 
 \newcommand{\deleted}[1]{{\color{red}\sout{#1}}}
-\newcommand{\added}[1]{{\color{kjgtuerkis} #1}}
+\newcommand{\added}[1]{{\color{green} #1}}
 \newcommand{\diff}[1]{{\color{orange} #1}}
-\newcommand{\todo}[1]{{\color{green} #1}}
+\newcommand{\todo}[1]{{\color{kjgtuerkis} #1}}
 %--------------------------------------
 % Add a counter to number the tables for the changes
 % Source:
@@ -95,7 +95,26 @@
 \setcounter{chapter}{-1}
 
 \begin{document}
-  \maketitle
+  
+  \begin{titlepage}
+  	\begin{center}
+  		\vspace*{1cm}
+  		\Large Satzung\\
+  		\vspace*{1.5cm}
+  		\normalsize Zuletzt bearbeitet am \today\\
+  		\vspace*{1.5cm}
+  		\large Bearbeitung-kommandos:
+  			\begin{itemize}
+  				\item\deleted{Gelöscht (Antrag)}
+  				\item\added{Hinzugefügt (Antrag)}
+  				\item\diff{Differenz zur aktuell gültigen Satzung}
+  				\item\todo{Todo für die Zukunft}
+  			\end{itemize}
+  			
+  		
+  	\end{center}
+  \end{titlepage}
+  
   \begin{center}
   %Einband
     \pagestyle{empty}
@@ -531,6 +550,7 @@ Diözesanverband des BDKJ.
 Er führt den Namen „Katholische junge Gemeinde (KjG) Diözesanverband Regensburg“,
 auch kurz KjG Diözesanverband Regensburg, mit Sitz in Regensburg.
 Das Verbandszeichen ist der Seelenbohrer.
+
 Der Diözesanverband ist ein nicht rechtsfähiger Verein.
 
 Aufgabe des Diözesanverbandes ist die Unterstützung, Förderung und Koordinierung der Arbeit
@@ -627,6 +647,7 @@ Der Diözesankonferenz sind insbesondere folgende Aufgaben vorbehalten:
             Diözesanversammlung des BDKJ
       \item der Delegierten der Mitgliederversammlung der KJG Landesstelle e.V., sofern die Diözesanleitung
             unbesetzt ist
+      \item \todo{der Delegierten für die Landesversammlung und Landesausschüsse der Katholischen jungen Gemeinde Landesarbeitsgemeinschaft Bayern}
       \item ggf. der Mitglieder von Sachausschüssen
     \end{itemize}
   \item Abwahl einzelner Mitglieder der Diözesanleitung beziehungsweise des Diözesanausschusses
@@ -685,7 +706,7 @@ Der Ablauf der Diözesankonferenz regelt sich nach der Geschäftsordnung.
 \subsubsection{Änderung der Satzung des Diözesanverbandes}
 Änderungen der Diözesansatzung können nur beschlossen werden, wenn zwei Drittel der anwesenden
 stimmberechtigten Mitglieder zustimmen und der Änderungsantrag den Mitgliedern der
-Diözesankonferenz mindestens drei Wochen vorher schriftlich mitgeteilt worden ist.
+Diözesankonferenz mindestens drei Wochen vorher schriftlich\todo{, per Brief oder elektronisch,} mitgeteilt worden ist.
 
 \subsection{Der Diözesanausschuss}
 Der Diözesanausschuss berät im Rahmen der Grundlagen und Ziele und der Beschlüsse der Diözesankonferenz
@@ -743,8 +764,8 @@ Der Diözesanausschuss tritt nach Bedarf, mindestens jedoch zweimal jährlich zu
 von der Diözesanleitung mindestens 14 Tage vorher einberufen. Den Vorsitz hat die Diözesanleitung.
 
 \subsection{Die Diözesanleitung}
-Die Diözesanleitung führt die Geschäfte und vertritt den KjG Diözesanverband Regensburg in sämtlichen
-Angelegenheiten gerichtlich und außergerichtlich.
+\diff{Die Diözesanleitung führt die Geschäfte und vertritt den KjG Diözesanverband Regensburg in sämtlichen
+Angelegenheiten gerichtlich und außergerichtlich. (\textit{Anmerkung [Tobi Preis]: Satz steht in der aktuell gültigen Fassung unter dem folgenden Punkt \glqq Aufgaben der Diözesanleitung\grqq})}
 \subsubsection{Aufgaben der Diözesanleitung}
 Zu den Aufgaben der Diözesanleitung gehören insbesondere:
 \begin{itemize}
@@ -785,11 +806,11 @@ Diözesanleitung können ihren Rücktritt nur vor der Diözesankonferenz erklär
 Den Mitgliedern der Diözesanleitung werden die bei der Verbandsarbeit entstandenen, angemessenen Auslagen
 ersetzt. Mitglieder der Diözesanleitung können darüber hinaus eine angemessene Vergütung erhalten.
 Die Vergütung für den Zeitaufwand bedarf dem Grunde und der Höhe nach der vorherigen Beschlussfassung
-des Diözesanausschusses.
+des Diözesanausschusses. \todo{Eine Vergütung für den Zeitaufwand nach Ausscheiden aus dem Amt der Diözesanleitung ist nicht mehr möglich. (\textit{Anmerkung [Tobi Preis]: Vorschlag zum sichergehen, dass nach langjährigem Ausscheiden nicht plötzlich unerwartete finanzielle Anforderungen kommen.})}
 
 \subsubsection{Kontakt zu KjG Pfarrgemeinschaften}
 Die Wahrnehmung der Kontakte zu den KjG Pfarrgemeinschaften ist Aufgabe von Diözesanleitung
-und gewähltem Diözesanausschuss. Bei Bedarf können weitere interessierte KjG Mitglieder,
+und gewähltem Diözesanausschuss \todo{(\textit{Anmerkung [Tobi Preis]: sollte dann dies nicht auch in die Aufgaben des Diözesanausschusses aufgenommen werden?})}. Bei Bedarf können weitere interessierte KjG Mitglieder,
 vorzugsweise mit Erfahrung in der KjG Pfarreiarbeit, mit dieser Aufgabe betraut werden.
 
 \section{Auflösung des Diözesanverbandes}
@@ -799,11 +820,10 @@ anwesenden stimmberechtigten Mitglieder müssen der Auflösung zustimmen. Das we
 im Falle der Auflösung regelt die Satzung des Bundesverbandes.
 
 Bei Auflösung oder Aufhebung des KjG Diözesanverbandes Regensburg oder bei Wegfall steuerbegünstigter
-Zwecke fällt das Vermögen des Diözesanverbandes an den KjG Bundesverband, der es unmittelbar und
-ausschließlich für gemeinnützige oder kirchliche Zwecke im Sinne der \ref{sec:Zweck} zu verwenden hat.
+Zwecke fällt das Vermögen des Diözesanverbandes an den \diff{ KjG Bundesverband, der es unmittelbar und
+ausschließlich für gemeinnützige oder kirchliche Zwecke im Sinne der \ref{sec:Zweck} zu verwenden hat.}
 \chapter{Schlussbestimmungen}
-Die Neufassung der Satzung tritt nach ihrer Beschlussfassung durch die Bundeskonferenz der
-Katholischen jungen Gemeinde 2017 in Kraft.
+\added{Die Neufassung der Satzung tritt nach ihrer Beschlussfassung durch die kleine Diözesankonferenz der Katholischen jungen Gemeinde Diözesanverband Regensburg 2022 und nach Zustimmung durch die Bundesleitung der KjG in Kraft. (\textit{Anmerkung [Tobi Preis]: das was hier zuvor stand war vermutlich ein copy-paste-Fehler. Das hier ist bereits in der aktuellsten beschlossenen Fassung.})}
 
 
 
@@ -866,10 +886,10 @@ Unterlagen und zwar:
 
 \subsection*{§10 Beschlussfähigkeit}
 Die Diözesankonferenz ist beschlussfähig, wenn ordnungsgemäß eingeladen wurde und wenigstens 50 Prozent
-der stimmberechtigten Mitglieder anwesend sind sowie kein Geschlecht mehr als 75\% der stimmberechtigten Mitglieder ausmacht.
+der stimmberechtigten Mitglieder anwesend sind sowie kein Geschlecht mehr als 75\deleted{\%}\added{ Prozent} der \added{anwesenden} stimmberechtigten Mitglieder ausmacht.
 
 Die Diözesankonferenz gilt als beschlussfähig, solange die Beschlussunfähigkeit nicht ausdrücklich
-festgestellt wird. Ist die Beschlussunfähigkeit festgestellt, hat die*der Vorsitzende die Sitzung sofort aufzuheben.
+festgestellt wird. Ist die Beschlussunfähigkeit festgestellt\deleted{, hat die*der Vorsitzende die Sitzung sofort aufzuheben.}\added{kann außer der Schließung der Konferenz kein Beschluss gefasst werden. Die Beratungen können aber gemäß der Tagesordnung und den durch die Geschäftsordnung festgelegten Bestimmungen fortgesetzt werden. Solange die Diözesankonferenz nicht geschlossen wurde, kann zu einem späteren Zeitpunkt erneut die Beschlussfähigkeit festgestellt werden.}
 
 \subsection*{§11 Beginn der Beratungen}
 Die Beratungen beginnen mit der Feststellung der Beschlussfähigkeit und der Feststellung der endgültigen
@@ -944,7 +964,7 @@ Gewählt wird mit einfacher Mehrheit. Bei Stimmengleichheit erfolgt Stichwahl.
 
 Der Wahl voraus geht eine Personalbefragung und auf Antrag eine Personaldebatte. Bei Wahlen für den 
 Diözesanausschuss und für Sachausschüsse der Diözesankonferenz gilt: Die jeweils kandidierenden Personen
-sind gewählt, wenn sie die meistgenannten KandidatInnen sind und wenn diese Nennungen mindestens ein
+sind gewählt, wenn sie die meistgenannten Kandidat*innen sind und wenn diese Nennungen mindestens ein
 Drittel der Stimmen ausmachen.
 
 \subsection*{§18 Wahl der Mitglieder der Diözesanleitung}
@@ -1002,7 +1022,7 @@ der KJG in Kraft.
 \addcontentsline{toc}{chapter}{Geschäftsordnung der Mitgliederversammlung}
 
 \subsection*{§1 Termin}
-Der Termin der jährlichen Mitgliederversammlung wird von der Mitgliederversammlung beschlossen.
+Der Termin der jährlichen Mitgliederversammlung wird von der Mitgliederversammlung beschlossen. \added{Die Mitgliederversammlung kann auf allgemeinen oder einzelfallbezogenen Beschluss auch in Form einer Video- oder Telefonkonferenz tagen. Mischformen sind zulässig. Der Beschluss zum Tagen in einer Video- oder Telefonkonferenz wird für die Mitgliederversammlung einzelfallbezogen durch die Mitgliederversammlung selbst oder die pädagogische Leitungsrunde getroffen.}
 \subsection*{§2 Vorbereitung}
 Die Vorbereitung der Mitgliederversammlung erfolgt durch die Pfarrleitung.
 \subsection*{§3 Vorläufige Tagesordnung}
