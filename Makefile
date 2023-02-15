@@ -4,6 +4,12 @@ ODTFLAGS = --toc
 
 all: kjgRegensburg.pdf kjgRegensburg.html kjgRegensburg.odt
 
+pdf: kjgRegensburg.pdf
+
+html: kjgRegensburg.html
+
+odt: kjgRegensburg.odt
+
 kjgRegensburg.pdf: kjgRegensburg.tex
 	$(LATEX) kjgRegensburg.tex
 
