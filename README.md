@@ -3,7 +3,8 @@ Satzung der KjG Regensburg
 
 ## generieren der PDF
 
-Zum Generieren der PDF  wurde 'pdflatex kjgsatzung.tex' ausgeführt, oder generator der eigenen Wahl ausführen.
+Zum Generieren der PDF  wurde 'pdflatex kjgsatzung.tex' ausgeführt, oder generator der eigenen Wahl ausführen. Falls du GNU Make installiert hast kannst du auch mittels 'make' eine PDF, ODT und HTML generieren,
+bzw. indem du 'make pdf', 'make odt' oder 'make html' ausführst, diese auch einzeln.
 Bei Problemen an mich wenden :-)
 
 # Satzungsänderungsanträge
