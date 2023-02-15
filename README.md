@@ -14,7 +14,7 @@ Bei Problemen an mich wenden :-)
 
 1. Satzung anpassen
 2. Änderungsantrag formulieren mit Begründung
-3. Antrag vorab an **BDKJ-Regensburg**, **KjG Bundesebene** und an **Alfred Blischke** (Ansprechpartner für das Finanzamt) senden. Das sollte frühzeitig geschehen, damit diese noch reagieren können. Für das finanzamt sind die meisten Änderungen uninteressant, da geht es primär um unsere Gemeinnützigkeit
+3. Antrag vorab an **BDKJ-Regensburg**, **KjG Bundesebene** und an **Alfred Blischke** (Ansprechpartner für das Finanzamt) senden. Das sollte frühzeitig geschehen, damit diese noch reagieren können. Für das Finanzamt sind die meisten Änderungen uninteressant, da geht es primär um unsere Gemeinnützigkeit. Für die Bundesebene wurde im Herbst 2022 ein konkretes Verfahren festgelegt. Das ist [hier](genehmigung_BE.md) zu finden.
 4. Antrag an die DL senden bevor die Dead-line abgelaufen ist
 
 ### DiKo
@@ -31,7 +31,7 @@ Bei Problemen an mich wenden :-)
 4. angepasste Satzung an das Büro senden für das Layouting (Tobi G)
 5. fertige Satzung an das Finanzamt senden
 
-## Teschnische Umsetzung eines Satzungsänderungsantrages
+## Technische Umsetzung eines Satzungsänderungsantrages
 
 ### Branching
 
