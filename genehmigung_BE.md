@@ -1,11 +1,12 @@
-% Verfahren zur Prüfung von Satzungen durch die Bundesebene
+# Verfahren zur Prüfung von Satzungen durch die Bundesebene
 
-# Allgemeines
+
+## Allgemeines
 
 - Geschäftsordnungen müssen nicht geprüft oder eingereicht werden
 - Vorprüfungen sind sehr zu empfe
 
-# Prüfung ohne Vorprüfung
+## Prüfung ohne Vorprüfung
 
 1. Satzung werden an die zuständige Kontakt-Bundesleitung (BL) des Diözesanverbands (DV) gesendet und den gesamten [Bundessatzungsausschuss (BSA)](satzungsausschuss@kjg.de) gesenedet
 
@@ -31,7 +32,7 @@
 
 10. Im Genehmigungsschreiben der BL  wird der DV darauf hingewiesen, dass eine Reinfassung der genehmigten Satzung als PDF-Dokument zur Ablage in der Bundesstelle an den BSA und die Kontakt-BL zu senden ist
 
-# Vorprüfung
+## Vorprüfung
 
 1. Der DV reicht die Entwürfe seiner Satzungsänderungen beim BSA und der zuständigen Kontakt-BL ein
 	- Datei-Format identisch zur Prüfung ohne Vorprüfung
