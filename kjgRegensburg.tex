@@ -52,7 +52,7 @@
 % Fußnoten mehfrach referenzieren:
 % Quelle:
 % https://www.macuser.de/threads/latex-fussnote-mehrfach-referenzieren.519258/
-\newcommand{\footnoteremember}[2]{
+\newcommand{\footnoteremember}[2]{%
   \footnote{#2}
   \newcounter{#1}
   \setcounter{#1}{\value{footnote}}
