@@ -52,7 +52,7 @@
 % Fußnoten mehfrach referenzieren:
 % Quelle:
 % https://www.macuser.de/threads/latex-fussnote-mehrfach-referenzieren.519258/
-\newcommand{\footnoteremember}[2]{
+\newcommand{\footnoteremember}[2]{%
   \footnote{#2}
   \newcounter{#1}
   \setcounter{#1}{\value{footnote}}
@@ -87,6 +87,9 @@
 \author{}
 \setcounter{chapter}{-1}
 
+% durchegehnde fussnoten
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter}
 \begin{document}
  
   \begin{center}
@@ -95,7 +98,7 @@
     \BgThispage
     \vspace*{\fill}
     \begin{Huge}
-      { \color{kjgtuerkis}  Stand November 2022}
+      { \color{kjgtuerkis}  Stand November 2023}
     \end{Huge}
     \vspace*{\fill}
     \newpage
@@ -132,10 +135,10 @@
 %Jetzt geht es mit Inhalt los:
 
 \chapter{Grundlagen und Ziele der Katholischen jungen Gemeinde}
-In der Katholischen jungen Gemeinde (KjG) schließen sich junge Christ*innen zusammen. 
-Mitglied der KjG kann jede*r werden, der*die die Grundlagen und Ziele des Verbandes bejaht.
-Demokratisch und gleichberechtigt wählen alle Mitglieder altersunabhängig die Leitungen und
-entscheiden über die Inhalte und Arbeitsformen des Verbandes.
+In der Katholischen jungen Gemeinde (KjG) schließen sich junge Christ*innen zusammen
+(Mitglied der KjG kann jede*r werden, die*der die Grundlagen und Ziele des Verbandes bejaht.).
+Demokratisch und gleichberechtigt wählen Mädchen und Jungen, Frauen und Männer die Leitungen und
+entscheiden über Inhalte und Arbeitsformen des Verbandes.
 Ihre jeweiligen Bedürfnisse und Interessen bestimmen das verbandliche Leben. Die Gruppen,
 Projekte und offenen Angebote der KjG bieten Raum für Begegnungen und Beziehungen,
 gemeinsame Erlebnisse und gemeinsames Handeln. In ihnen erfahren Kinder, Jugendliche und junge
@@ -213,8 +216,8 @@ Passive Mitglieder zählen nicht in die Stimmschlüsselberechnung hinein.
 \section{Die Pfarrgemeinschaft}
 Die Mitglieder der Katholischen jungen Gemeinde in der Pfarrei bilden die KjG Pfarrgemeinschaft.
 
-Sie ist Mitglied im Diözesanverband der KjG. Sie arbeitet mit anderen BDKJ-Mitgliedsverbänden
-zusammen und kann mit diesen den BDKJ bilden.
+Sie ist Mitglied im Diözesanverband der KjG. Sie arbeitet mit anderen
+BDKJ-Jugendverbänden zusammen und kann mit diesen den BDKJ bilden.
 
 Sie führt den Namen „Katholische junge Gemeinde (KjG) Pfarrgemeinschaft/Ortsgruppe N.N.“.
 Das Verbandszeichen ist der Seelenbohrer.
@@ -242,7 +245,7 @@ der nächsthöheren Ebene. Diese Satzung muss mindestens enthalten:
   \item Die Zugehörigkeit zum BDKJ
 \end{itemize}
 
-Und gemäß der nachfolgenden Paragraphen
+Und gemäß der nachfolgenden Paragraphen:
 \begin{itemize}
   \item Die Mitgliederversammlung
   \item Die Pfarrleitung
@@ -255,7 +258,8 @@ Diese Satzung kann gemäß der nachfolgenden Paragraphen enthalten:
   \item Die Pädagogische Leitungsrunde
 \end{itemize}
 
-Die Satzung bedarf der Zustimmung durch die Diözesanleitung.\newline
+Die Satzung bedarf der Zustimmung durch die Diözesanleitung.\\
+
 Gegen die Entscheidung der Diözesanleitung kann beim Diözesanausschuss Einspruch erhoben
 werden. Der Diözesanausschuss entscheidet abschließend.
 \subsection{Ausschluss der Pfarrgemeinschaft}
@@ -353,7 +357,7 @@ Ihre Aufgaben sind insbesondere:
   \item Vertretung und Mitarbeit auf der Diözesanebene der KjG
   \item Vertretung der KjG Pfarrgemeinschaft in Kirche und Öffentlichkeit
   \item Zusammenarbeit mit anderen KjG Pfarrgemeinschaften
-  \item Zusammenarbeit mit den anderen BDKJ Mitgliedsverbänden
+  \item Zusammenarbeit mit den anderen BDKJ Jugendverbände
   \item Zusammenarbeit mit den in den Pfarreien tätigen Gemeinschaften und Gremien
   \item Verantwortung für die Finanzen
   \item Sorge um die Aus- und Weiterbildung der Mitarbeitenden durch den Verband (insbesondere der Gruppenleiter*innen)
@@ -362,24 +366,32 @@ Ihre Aufgaben sind insbesondere:
 
 \subsubsection{Zusammensetzung der Pfarrleitung}
 
-Die Pfarrleitung ist geschlechtergerecht\footnoteremember{geschlechtergerecht}{Geschlechtergerecht im Rahmen dieser Satzung bedeutet: Gremien (und Ämter) werden mit männlichen und
-weiblichen Personen paritätisch besetzt. Bei Gremien mit einer Größe von bis zu 10 Personen wird zusätzlich
-eine, bei mehr als 10 Personen zwei Stellen für Personen diversen Geschlechts eingerichtet.} zu besetzen, ihr gehören mindestens an:
+Die Pfarrleitung ist geschlechtergerecht\footnoteremember{geschlechtergerecht}{Geschlechtergerecht
+  im Rahmen dieser Satzung bedeutet: Gremien (und Ämter) werden mit männlichen und
+  weiblichen Personen paritätisch besetzt.
+  Bei Gremien mit einer Größe von bis zu 10 Personen wird zusätzlich
+  eine, bei mehr als 10 Personen zwei Stellen für Personen diversen Geschlechts eingerichtet.} zu
+besetzen, ihr gehören mindestens an:
+
 Stimmberechtigt:
 \begin{itemize}
   \item 5 Pfarrleiter*innen (2 männlich, 2 weiblich, 1 divers)
-  \item {2 Geistliche Leiter*innen unterschiedlichen Geschlechts\footnoteremember{Berechtigung Geist}{
-    Das Amt der Geistlichen Leiterin und des Geistlichen Leiters kann von Personen wahrgenommen werden,
-    die eine theologische oder religionspäd. Ausbildung abg. haben.
+  \item {2 Geistliche Leiter*innen unterschiedlichen Geschlechts
+        \footnoteremember{Berechtigung Geist}{Das Amt der Geistlichen Leitung
+        kann von Personen wahrgenommen werden, die eine theologische oder
+        religionspädagogische Ausbildung abgeschlossen haben.
   }}
 \end{itemize}
 Die Aufgaben der Pfarrleitung können auch wahrgenommen werden, wenn nicht alle Stellen besetzt sind.
- Von der Verpflichtung zur geschlechtergerechten Besetzung sind die KjG Pfarrgemeinschaften ausgenommen, in
+Von der Verpflichtung zur geschlechtergerechten\footnoterecall{geschlechtergerecht}
+Besetzung sind die KjG Pfarrgemeinschaften ausgenommen, in
 denen nur Personen eines Geschlechts vertreten sind.
 
 Mindestens ein Mitglied der Pfarrleitung muss voll geschäftsfähig sein.\\
-Für mindestens die Hälfte der Stellen müssen beschränkt geschäftsfähige Personen (§ 106 BGB)\footnote{§106 BGB: Ein Minderjähriger, der das siebente Lebensjahr vollendet hat, ist nach Maße der §107 bis §113 in
-der Geschäftsfähigkeit beschränkt.} zur Wahl zugelassen werden.
+Für mindestens die Hälfte der Stellen müssen beschränkt geschäftsfähige Personen
+(§ 106 BGB)\footnote{§106 BGB: Ein Minderjähriger, der das siebente Lebensjahr
+  vollendet hat, ist nach Maße der §107 bis §113 in der Geschäftsfähigkeit
+  beschränkt.} zur Wahl zugelassen werden.
 
 Die Pfarrleitung kann für die Kassenführung eine*n oder mehrere Kassierer*innen berufen.
 Mit dem Amt des*der Kassiers*in sind keine zusätzlichen Stimmrechte verbunden.\\
@@ -423,7 +435,7 @@ Die Pädagogische Leitungsrunde dient den Leiter*innen der einzelnen Gesellungs-
 \end{itemize}
 
 \subsubsection{Zusammensetzung und Einberufung der Pädagogischen Leitungsrunde}
-Zur pädagogischen Leitungsrunde gehören:
+Zur Pädagogischen Leitungsrunde gehören:
 \begin{itemize}
   \item Die Pfarrleitung
   \item Die Leiter*innen der einzelnen Gesellungs- und Arbeitsformen
@@ -451,7 +463,12 @@ Zu den Aufgaben des Kindersenats gehören:
 
 \subsubsection{Zusammensetzung und Einberufung des Kindersenats}
 
-Der Kindersenat ist geschlechtergerecht zu besetzen, ihm gehören mindestens an:
+Der Kindersenat ist geschlechtergerecht\footnoteremember{geschlechtergerecht1}{Geschlechtergerecht
+  im Rahmen dieser Satzung bedeutet: Gremien (und Ämter) werden mit männlichen und weiblichen
+  Personen paritätisch besetzt.
+  Bei Gremien mit einer Größe von bis zu 10 Personen wird zusätzlich eine, bei mehr als 10
+  Personen zwei Stellen für Personen diversen Geschlechts eingerichtet.} zu besetzen,
+ihm gehören mindestens an:
 
 \begin{itemize}
   \item 2 männliche Kinder
@@ -459,7 +476,7 @@ Der Kindersenat ist geschlechtergerecht zu besetzen, ihm gehören mindestens an:
   \item 1 diverses Kind
 \end{itemize}
 Die Aufgaben des Kindersenates können auch dann wahrgenommen werden, wenn nicht alle Ämter besetzt sind.
-Von der Verpflichtung zur geschlechtergerechten\footnoterecall{geschlechtergerecht} Besetzung sind die KjG Pfarrgemeinschaften ausgenommen,
+Von der Verpflichtung zur geschlechtergerechten\footnoterecall{geschlechtergerecht1} Besetzung sind die KjG Pfarrgemeinschaften ausgenommen,
 in denen nur Personen eines Geschlechts vertreten sind.
 
 Der Kindersenat wird regelmäßig, mindestens zweimal im Jahr, von der Pfarrleitung einberufen
@@ -473,7 +490,7 @@ Die KjG Pfarrgemeinschaften des Diözesanverbandes können zur besseren Wahrnehm
 Aufgaben auf der mittleren Ebene Arbeitsgemeinschaften bilden.
 
 Sie führt den Namen „Katholische junge Gemeinde (KjG) Arbeitsgemeinschaft N.N.“.
-Das Vebandszeichen ist der Seelenbohrer.
+Das Verbandszeichen ist der Seelenbohrer.
 
 Vordringliche Aufgabe der Arbeitsgemeinschaft ist die Unterstützung, Förderung und Koordinierung
 der Arbeit der KjG Pfarrgemeinschaften.
@@ -540,13 +557,13 @@ und kirchliche Zwecke im Sinne des Abschnitts ,,Steuerbegünstigte Zwecke`` der 
 \tocless\subsection{}
 \label{subsec:Zweck}
 Zweck des KjG Diözesanverbandes Regensburg ist die
-Förderung der Religion \footnote{§52 Abs. 2 S.1 Nr.2 AO},
-der Jugendhilfe \footnote{§52 Abs. 2 S 1 Nr.4 AO},
+Förderung der Religion (§ 52 Abs. 2 S. 1 Nr. 2 AO),
+der Jugendhilfe (§ 52 Abs. 2 S. 1 Nr. 4 AO),
 der Erziehung, Volks- und Berufsbildung einschließlich
-der Studentenhilfe \footnote{§52 Abs. 2 S 1 Nr.7 AO}, der internationalen Gesinnung und des
-Völkerverständigungsgedankens \footnote{§52 Abs. 2 S.1 Nr. 13 AO}, des bürgerlichen Engagements zugunsten
-gemeinnütziger und kirchlicher Zwecke\footnote{§ 52 Abs 2 S. 1 Nr.25 AO}
-sowie die Verfolgung kirchlicher Zwecke \footnote{§54 AO}
+der Studentenhilfe (§ 52 Abs. 2 S. 1 Nr.7 AO), der internationalen Gesinnung
+und des Völkerverständigungsgedankens (§ 52 Abs. 2 S. 1 Nr. 13 AO), des
+bürgerlichen Engagements zugunsten gemeinnütziger und kirchlicher Zwecke
+(§ 52 Abs. 2 S. 1 Nr. 25 AO) sowie die Verfolgung kirchlicher Zwecke (§ 54 AO).
 
 \tocless\subsection{}
 Der Satzungszweck wird verwirklicht insbesondere durch:
@@ -554,13 +571,13 @@ Der Satzungszweck wird verwirklicht insbesondere durch:
   \item die Wahrnehmung kirchlicher Kinder- und Jugendarbeit insbesondere in der Diözese Regensburg
         in Einheit mit der Gesamtkirche und in Übereinstimmung mit den Grundrechten selbst,
   \item die Schaffung von Begegnungsmöglichkeiten im Rahmen der Organisation oder Durchführung von
-        Begegnungs- und Bildungsmaßnahmen sowie Aktionen
+        Begegnungs- und Bildungsmaßnahmen sowie Aktionen,
   \item die Förderung demokratischen, gleichberechtigten und solidarischen Engagements, das sich
         gegen jede Art von Ausgrenzung oder Unterdrückung von Menschen wendet,
   \item die Förderung einer ökologisch verantworteten Lebensweise um die Zerstörung der
-          natürlichen Lebensgrundlage einzudämmen
+          natürlichen Lebensgrundlage einzudämmen,
   \item die nationale und internationale Zusammenarbeit um partnerschaftlich und solidarisch für
-        eine weltweite Etablierung von gleichen und gerechten Lebensbedingungen für alle Menschen einzustehen
+        eine weltweite Etablierung von gleichen und gerechten Lebensbedingungen für alle Menschen einzustehen,
   \item die Schaffung von Raum für Kinder und Jugendliche sowie junge Erwachsene und deren
         Gruppierungen:
     \begin{itemize}
@@ -577,8 +594,7 @@ Der Satzungszweck wird verwirklicht insbesondere durch:
     \end{itemize}
 \end{itemize}
 \tocless\subsection{}
-Der KjG Diözesanverband Regensburg darf seinen Satzungszweck auch durch Hilfspersonen (§57 Abs. 1 S. 2 AO)
-verwirklichen.
+Der KjG Diözesanverband Regensburg darf seinen Satzungszweck auch durch Hilfspersonen (§ 57 Abs. 1 S. 2 AO) verwirklichen.
 \tocless\subsection{}
 Der KjG Diözesanverband Regensburg ist selbstlos tätig; er verfolgt nicht in erster Linie eigenwirtschaftliche Zwecke.
 \tocless\subsection{}
@@ -631,14 +647,18 @@ Der Diözesankonferenz sind insbesondere folgende Aufgaben vorbehalten:
   \item Abwahl einzelner Mitglieder der Diözesanleitung beziehungsweise des Diözesanausschusses
 \end{itemize}
 \subsubsection{Ausschüsse}
-Die Diözesankonferenz kann für bestimmte Aufgaben geschlechtergerecht\footnote{Geschlechtergerecht im Rahmen dieser Satzung bedeutet: Gremien (und Ämter) werden mit männlichen und
-weiblichen Personen paritätisch besetzt. Bei Gremien mit einer Größe von bis zu 10 Personen wird zusätzlich
-eine, bei mehr als 10 Personen zwei Stellen für Personen diversen Geschlechts eingerichtet.} besetzte Sachausschüsse einrichten.
+Die Diözesankonferenz kann für bestimmte Aufgaben
+geschlechtergerecht\footnoteremember{geschlechtergerecht2}{Geschlechtergerecht im Rahmen dieser
+  Satzung bedeutet: Gremien (und Ämter) werden mit männlichen und
+  weiblichen Personen paritätisch besetzt. Bei Gremien mit einer Größe von bis zu 10 Personen
+  wird zusätzlich eine, bei mehr als 10 Personen zwei Stellen für Personen diversen
+  Geschlechts eingerichtet.} besetzte Sachausschüsse einrichten.
 Sachausschüsse zu geschlechtsspezifischen Belangen sind hiervon ausgenommen.
+
 Den Vorsitz der Sachausschüsse hat ein Mitglied der Diözesanleitung inne, dieser kann delegiert
 werden.
 
-Der Wahlausschuss leitet die Wahlen. Der Wahlausschuss ist geschlechtergerecht zu besetzen. Den Vorsitz
+Der Wahlausschuss leitet die Wahlen. Der Wahlausschuss ist geschlechtergerecht\footnoterecall{geschlechtergerecht2} zu besetzen. Den Vorsitz
 des Wahlausschusses hat ein Mitglied der Diözesanleitung inne, dieser kann delegiert werden.
 
 \subsubsection{Zusammensetzung der Diözesankonferenz}
@@ -654,7 +674,8 @@ Die Delegation ist folgendermaßen zu besetzen:
         Delegierte unterschiedlichen Geschlechts}
 \end{itemize}
 
-Von der Verpflichtung zur geschlechtergerechten Besetzung sind die KjG Pfarrgemeinschaften ausgenommen,
+Von der Verpflichtung zur geschlechtergerechten\footnoterecall{geschlechtergerecht2} Besetzung
+sind die KjG Pfarrgemeinschaften ausgenommen,
 in denen nur Personen eines Geschlechts vertreten sind.
 
 Hat eine KjG Pfarrgemeinschaft bis drei Wochen vor der Diözesankonferenz nicht die Mitgliedsbeiträge des Vorjahres an den Diözesanverband bezahlt, so ruht ihr Stimmrecht.
@@ -671,9 +692,11 @@ Beratende Mitglieder sind:
   \item Ein Mitglied des BDKJ Diözesanvorstandes
   \item Der*die Vorsitzende des Vereins zur Förderung der Katholischen jungen Gemeinde in der
         Diözese Regensburg e.V.
-  \item Je ein Mitglied der diözesanen Teams und Arbeitsgruppen
-        \footnoteremember{Dauermitglied}{Das jeweilige Mitglied muss Dauermitglied im KjG Diözesanverband Regensburg sein}
-  \item Je ein Mitglied der Leitung der Arbeitsgemeinschaften der Pfarreien \footnoterecall{Dauermitglied}
+  \item Je ein Mitglied der diözesanen Teams und
+        Arbeitsgruppen\footnoteremember{Dauermitglied}{Das jeweilige Mitglied muss
+        Dauermitglied im KjG Diözesanverband Regensburg sein}
+  \item Je ein Mitglied der Leitung der Arbeitsgemeinschaften der
+        Pfarreien\footnoterecall{Dauermitglied}
 \end{itemize}
 
 Gäste können von der Diözesanleitung eingeladen werden.
@@ -718,8 +741,10 @@ Stimmberechtigte Mitglieder des Diözesanausschusses sind:
   \item Die Mitglieder der Diözesanleitung
 \end{itemize}
 
-Von diesen Personen, die nicht zur Diözesanleitung gehören, sind bis zu zwei Personen unterschiedlichen Geschlechts Geistliche Leitung.\footnote{Das Amt der Geistlichen Leitung kann von Personen wahrgenommen werden, die
-	eine theologische oder religionspädagogische Ausbildung abgeschlossen haben.}
+Von diesen Personen, die nicht zur Diözesanleitung gehören, sind bis zu zwei
+Personen unterschiedlichen Geschlechts Geistliche Leitung.\footnote{Das Amt der
+  Geistlichen Leitung kann von Personen wahrgenommen werden, die
+eine theologische oder religionspädagogische Ausbildung abgeschlossen haben.}
 
 Beratende Mitglieder sind:
 \begin{itemize}
@@ -771,8 +796,10 @@ Zur Diözesanleitung gehören:
 	\item 1 diverses Mitglied.
 \end{itemize}
 
-Von diesen Personen sind bis zu zwei Personen unterschiedlichen Geschlechts Geistliche Leitung.\footnote{Das Amt der Geistlichen Leitung kann von Personen wahrgenommen werden, die
-	eine theologische oder religionspädagogische Ausbildung abgeschlossen haben.}
+Von diesen Personen sind bis zu zwei Personen unterschiedlichen Geschlechts
+Geistliche Leitung.\footnote{Das Amt der Geistlichen Leitung kann von Personen
+  wahrgenommen werden, die eine theologische oder religionspädagogische
+  Ausbildung abgeschlossen haben.}
 
 Die Aufgaben der Diözesanleitung können auch dann wahrgenommen werden, wenn nicht alle
 Ämter besetzt sind. Mindestens ein Mitglied der Diözesanleitung muss voll geschäftsfähig sein.
@@ -801,7 +828,9 @@ im Falle der Auflösung regelt die Satzung des Bundesverbandes.
 Bei Auflösung oder Aufhebung des KjG Diözesanverbandes Regensburg oder bei Wegfall steuerbegünstigter Zwecke fällt das Vermögen des Diözesanverbandes an den Bundesstelle der KjG e.V. (Carl-Mosters-Platz 1 - 40477 Düsseldorf), der es unmittelbar und ausschließlich für gemeinnützige oder kirchliche Zwecke im Sinne der Nr. 3.1.2 zu verwenden hat.
 
 \chapter{Schlussbestimmungen}
-Die Neufassung der Satzung tritt nach ihrer Beschlussfassung durch die kleine Diözesankonferenz der Katholischen jungen Gemeinde Diözesanverband Regensburg 2022 und nach Zustimmung durch die Bundesleitung der KjG in Kraft.
+Die Neufassung der Satzung tritt nach ihrer Beschlussfassung durch die große
+Diözesankonferenz der Katholischen jungen Gemeinde Diözesanverband Regensburg
+2023 und nach Zustimmung durch die Bundesleitung der KjG in Kraft.
 
 
 
@@ -909,8 +938,9 @@ befassen; das sind:
   \item Antrag auf Überweisung an einen Ausschuss
 \end{itemize}
 
-Erhebt sich bei einem Antrag zur Geschäftsordnung kein Widerspruch, ist der Antrag angenommen; andern
-falls ist nach Anhörung eines*r Gegenredners*in sofort abzustimmen.
+Erhebt sich bei einem Antrag zur Geschäftsordnung kein Widerspruch, ist der
+Antrag angenommen; andernfalls ist nach Anhörung eines*r Gegenredners*in sofort
+abzustimmen.
 
 Über die Auslegung der Wortmeldungen zur Geschäftsordnung entscheidet die*der Vorsitzende verbindlich.
 
